@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Home",
+    "employers": "Employers",
+    "applicants": "Applicants",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "language": "Language",
+    "career":"Careers"
+  },
+  "homepage": {
+    "hero": {
+      "heroTopTitle": "RECRUITING & HEADHUNTING",
+      "heroBigTitle": "We find exceptional talent for your company.",
+      "heropara1": "A true unicorn, an exceptional professional whose expertise and value are rare in the marketplace can feel like finding a needle in a haystack. While others struggle to uncover such talent, ",
+      "heropara2": "Cloud Konektion ",
+      "heropara3": "excels at delivering the right fit with precision and speed."
+    },
+    "brand": {
+      "brandText": "Partnered for 10+ Years to Deliver Trusted HR Solutions"
+    },
+    "finding": {
+      "findTopHeading": "BEYOND HIRING, CREATING IMPACT",
+      "findBig1Heading": "Finding the right person is both an art and a science.",
+      "findBig2Heading": "Every organisation is built by its people, and those peopledetermine its success. That is why our work goes beyond filling vacancies.",
+      "findParagraph1": "Cloud Konektion ",
+      "findParagraph2": "is committed to the success of every employer and every professional we serve. We recognise that each client and candidate is unique, and we approach every engagement with precision, dedication, and integrity."
+    },
+    "employer": {
+      "employerExaperence": "Years of Experience",
+      "employerHeading1": "COMPREHENSIVE HR SERVICE ",
+      "employerHeading2": "FOR EMPLOYERS",
+      "employerparagraph": "We provide comprehensive recruitment solutions designed to secure top-tier talent for your business.",
+      "section1employerHeading1": "Headhunting",
+      "section1employeroara": "This is more than candidate sourcing; it is the strategic art of identifying and engaging high-calibre professionals who can deliver measurable value and competitive advantage.",
+      "section2employerHeading1": "Recruiting",
+      "section2employeroara": "A structured process of sourcing, attracting, and selecting candidates for diverse roles within your organisation. Our recruiters use modern tools, targeted outreach, and data-driven strategies to connect you with the right people.",
+      "employerbutton": "More Information for Employers"
+    },
+    "service": {
+      "serviceTopHeading": "SERVICES FOR APPLICANTS",
+      "serviceHeading1": "How to stand out in today’s",
+      "serviceHeading2": "job market.",
+      "servicePara": "If you are pursuing a new opportunity, we will help you present yourself with confidence and clarity, maximising your chances of securing your ideal role.",
+      "serviceButton": "More Information for Applicants",
+      "servicesInterviewheading": "Interview Preparation",
+      "serviceInterviewPara": "Gain the confidence to succeed with tailored interview techniques, mock sessions, and practical guidance.",
+      "serviceCvHeading": "CV & LinkedIn Profile Enhancement",
+      "serviceCvPara": "Showcase your strengths with a refined CV and optimised LinkedIn profile designed to make a lasting impression.",
+      "serviceLaborHeading": "Labour Market Analysis",
+      "serviceLaborPara": "Explore career opportunities across industries and regions with our in-depth labour market insights, helping you target the most suitable positions.",
+      "serviceParsonalHeading": "Personality Assessments",
+      "serviceParsonalPara": "Discover your strengths, motivations, and ideal work style through assessments that ensure a stronger fit between you and potential employers.",
+      "serviceStat1": "strategic regions",
+      "serviceStat2": "top-tier executives placed",
+      "serviceStat3": "placement success rate",
+      "serviceStat4": "years of recruitment excellence"
+    },
+    "ourCliend": {
+      "cliendTopHeading": "CASE STUDIES & CLIENT REFERENCES",
+      "cliendHeading1": "How we’ve delivered results for ",
+      "cliendHeading2": "our clients",
+      "cliendHeadhuntingHead": "Headhunting",
+      "cliendHeadhuntingPara": "A global company urgently sought to fill a specialised role after their previous agency failed to deliver suitable candidates. Through a detailed consultation, we uncovered overly restrictive technical requirements that were limiting the search. By refining the criteria and leveraging our extensive talent database, we presented three strong shortliste candidates within just two weeks two of whom proved to be an excellent fit both technically and culturally.",
+      "clientRecuitHead": "Recruiting",
+      "clientRecuitPara": "A company was searching for a proactive sales representative with strong industry connections. Although the role appeared best suited for headhunting, we implemented a broader recruitment strategy that combined targeted advertising, marketing campaigns, social media outreach, and database searches. Within just two weeks, we identified and secured a candidate whose personality profile and professional background aligned perfectly with the role’s demands."
+    },
+    "compitator": {
+      "compitatorHeading": "Specialised Recruitment Services – Powered by Our Expertise",
+      "compitatorButton": "I want the best people."
+    },
+    "formModel": {
+      "formHeading": "Contact us",
+      "formPara": "Are you interested in our services? Fill out the short form and we will contact you soon.",
+      "name": "Name*",
+      "company": "company*",
+      "phone": "Phone contact*",
+      "email": "Email*",
+      "report": "Report",
+      "policy": "I have read the Personal Data Processing Policy",
+      "button": "Send →"
+    },
+    "banner": {
+      "bannerHeading": "Specialised Recruitment Services – Powered by Our Expertise",
+      "bannerPara1": "In addition to standard hiring solutions,",
+      "bannerPara2": "Cloud Konektion",
+      "bannerPara3": "delivers specialised recruitment support tailored to businesses with unique workforce needs.",
+      "bannerSecHeading": "Expertise across industries",
+      "bannerThiHeading": "Fast and reliable hiring",
+      "bannerFortHeading": "Diverse talent pools",
+      "bannerFiftHeading": "Sustainable placements",
+      "bannerLink": "More about the service"
+    }
+  },
+  "employeepage": {
+    "heroEmployee": {
+      "heroEmployeeTopHeading": "FOR EMPLOYERS",
+      "heroEmployeeHeading": "We provide comprehensive recruitment solutions designed to secure top-tier talent for your business.",
+      "heroHuntingHead": "Headhunting",
+      "heroHuntingPara": "This goes beyond simple candidate sourcing; it is a strategic process of identifying and engaging top-tier professionals whose expertise delivers measurable value and creates a lasting competitive advantage for your business.",
+      "heroHuntingLink": "More Information",
+      "heroRecuitHead": "Recruiting",
+      "heroRecuitPara": "A streamlined process designed to source, attract, and select the right candidates for a variety of roles within your organisation. Leveraging modern tools, targeted outreach, and data-driven strategies, our recruiters ensure you connect with talent that truly fits your business needs.",
+      "heroRecuitLink": "More Information"
+    },
+    "headHunting": {
+      "headHuntingTopHeading": "Headhunting",
+      "headHuntingHeading": "How Headhunting Works at Cloud Konektion",
+      "headHuntingPara": "Cloud Konektion’s headhunters specialise in sourcing high-calibre professionals currently excelling in other organisations. These individuals often bring the exact skills and experience your business needs. Through a targeted approach, we identify, engage, and present them with tailored opportunities that align both with their career ambitions and your company’s goals."
+    },
+    "success": {
+      "successHeading": "Why Headhunting Matters for Your Success",
+      "successPara1": "In today’s competitive labour market, attracting and retaining top performers is vital. Many of the most talented professionals are not actively seeking new roles. Through our headhunting services,",
+      "successPara2": "Cloud Konektion",
+      "successPara3": "enables you to reach beyond traditional channels and connect directly with this exceptional talent pool."
+    },
+    "advantage": {
+      "advantageTopHeading": "Advantages of Cloud Konektion Headhunting",
+      "advantageHeadingStats1": "Access to Passive Talent",
+      "advantageParaStats1": "Engage with professionals who aren’t actively seeking jobs, giving your business the opportunity to secure rare and exceptional candidates.",
+      "advantageHeadingStats2": "Industry-Focused Expertise",
+      "advantageParaStats2": "Our headhunters specialise in specific industries and functions, ensuring a deeper understanding of your needs and more accurate candidate matches.",
+      "advantageHeadingStats3": "Efficient & Discreet Process",
+      "advantageParaStats3": "Partnering with our experts saves valuable time and resources while guaranteeing a professional, confidential, and results-driven search."
+    },
+    "professional": {
+      "professionalHeading": "By leveraging our expertise and extensive network of professionals, you can streamline your recruitment process, secure top talent, and achieve sustainable long-term success .Together, we will find your unicorn.",
+      "professionalButton": "I want the best people."
+    },
+    "workRecuit": {
+      "workRecuitTopHeading": "Recruiting",
+      "workRecuitHeading": "How Recruiting Works at Cloud Konektion",
+      "workRecuitPara": "Our recruitment specialists follow a structured process designed to secure the right fit for your organisation. From advertising roles on targeted platforms and meticulously screening CVs to coordinating interviews and conducting detailed reference checks, every step is handled with care. Beyond skills and experience, we prioritise cultural and value alignment to ensure candidates integrate seamlessly into your team, helping you build strong, lasting workforces that drive long-term success."
+    },
+    "successSection": {
+      "title": "Why Recruiting Is Essential to Business Success",
+      "description": "Recruitment lays the foundation for a productive and motivated workforce. At Cloud Konektion, we recognise that the right hiring decisions significantly influence employee morale, efficiency, and company culture. This is why we adapt every recruitment process to meet the specific needs of each employer we work with."
+    },
+    "parsonality": {
+      "parsonalityHeading": "Personality Assessments",
+      "parsonalityPara": "Our personality assessments provide valuable insights into candidates’ behavioural styles and workplace motivations. They help reveal whether an individual is more introverted or extroverted, whether their drive is focused on achieving goals or building relationships, how their traits may develop over time, and any potential challenges that could affect long-term performance. These insights support smarter hiring decisions and ensure stronger alignment between candidates and organisational needs."
+    }
+  },
+  "applicant": {
+    "heroApplicant": {
+      "heroTopHeading": "Services for Candidates",
+      "heroHeading": "How to succeed in today’s job market.",
+      "heroSubHeading1": "Consultations",
+      "heroSubPara1": "Our candidate consultations are tailored to help you showcase confidence and professionalism. With expert guidance, you’ll sharpen your interview techniques, enhance your personal brand, and boost your chances of securing the role that best fits your skills and ambitions.",
+      "heroSubHeading2": "Personality Assessments",
+      "heroSubPara2": "We provide personality assessments that help you and potential employers better understand your strengths, motivations, and ideal work style. These insights allow for better job alignment and stronger career development."
+    },
+    "opertunity": {
+      "opertunityHeading": "Consultations with Candidates – Be Ready for New Opportunities",
+      "opertunityPara": "Our consultations extend beyond interview preparation, offering support in refining your CV, optimising your LinkedIn profile, and strengthening your visibility with employers. By sharpening your presentation skills and elevating your professional brand, we ensure you stand out in a competitive market and increase your chances of securing the role you truly want."
+    },
+    "consultation": {
+      "consltationHeading": "Our Consultation Services Include:",
+      "consltationService1": "Interview preparation and coaching",
+      "consltationService2": "CV editing and enhancement",
+      "consltationService3": "LinkedIn profile optimisation",
+      "consltationService4": "Labour market insights and career guidance",
+      "consltationService5": "Mock interviews to build confidence",
+      "consltationService6": "Personality assessments for deeper self-awareness"
+    },
+    "inprove": {
+      "inproveHeading": "We connect skilled and hardworking individuals with employers who value dedication, craftsmanship, and reliability. Whether you are seeking full-time, part-time, or contract work, our vacancies cover a wide range of blue-collar roles across industries.",
+      "inporvePara": "Our goal is to help you find stable employment that matches your skills and experience while opening doors to new opportunities for career growth.",
+      "inproveButton": "I want the best people."
+    }
+  },
+  "about": {
+    "heroAbout": {
+      "heroTopHeading": "ABOUT US",
+      "heroHeading": "10 Years of Recruitment Expertise",
+      "heroPara1": "For a decade, ",
+      "heroPara2": "Cloud Konektion",
+      "heroPara3": "has been a trusted name in recruitment and headhunting, specialising in filling challenging positions across a wide range of sectors. Many of these roles demand rare skill sets or unique language combinations, and our team combines proven expertise with AI-powered tools and modern technologies to deliver faster, more accurate searches and targeted outreach. Beyond recruitment, we work flexibly online, stay engaged through professional networking events, and, with the support of strategic partnerships, provide clients access to additional services in education and personal development."
+    },
+    "whatValue": {
+      "valueHeading": "Our Values",
+      "valueStatsTitle1": "Quality",
+      "valueStatsDescription1": "We are committed to delivering recruitment services of the highest standard. Through continuous innovation and process improvement, we aim not only to meet but to exceed client expectations. For us, quality is the cornerstone of long-term success.",
+      "valueStatsTitle2": "Flexibility",
+      "valueStatsDescription2": "In today’s fast-changing world, adaptability is key. We pride ourselves on offering flexible solutions that respond quickly and effectively to each client’s unique needs.",
+      "valueStatsTitle3": "Partnership",
+      "valueStatsDescription3": "We believe strong, long-term partnerships drive mutual growth. Building trust with clients and business partners is central to our mission, creating a stable foundation for future success."
+    }
+  },
+  "footer": {
+    "footerFront": "Cloud Konektion",
+    "footerPara": "We find exceptional talent for your company",
+    "footerContact": "Contact us",
+    "footerOffice": "Office",
+    "footerAddress": "Address:",
+    "footerLink1": "Home",
+    "footerLink2": "Employers",
+    "footerLink3": "Applicants",
+    "footerLink4": "About Us",
+    "footertext": "Links"
+  }
+}

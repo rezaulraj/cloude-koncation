@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Kreu",
+    "employers": "Punëdhënësit",
+    "applicants": "Aplikantët",
+    "about": "Rreth Nesh",
+    "contact": "Na Kontaktoni",
+    "language": "Gjuha",
+    "career":"Careers"
+  },
+  "homepage": {
+    "hero": {
+      "heroTopTitle": "REKRUTIM & KËRKIM I TALENTEVE",
+      "heroBigTitle": "Ne gjejmë talente të jashtëzakonshme për kompaninë tuaj.",
+      "heropara1": "Një profesionist i rrallë, një ekspert unik në treg, shpesh duket si një gjilpërë në kashtë. Ndërsa të tjerët përballen me sfida për të gjetur talente të tilla, ",
+      "heropara2": "Cloud Konektion ",
+      "heropara3": "spikat në identifikimin dhe ofrimin e kandidatit ideal me saktësi dhe shpejtësi."
+    },
+    "brand": {
+      "brandText": "Partneritet prej 10+ vitesh për ofrimin e zgjidhjeve të besueshme HR"
+    },
+    "finding": {
+      "findTopHeading": "Përtej Rekrutimit – Krijojmë Ndikim",
+      "findBig1Heading": "Gjetja e personit të duhur është një art dhe një shkencë.",
+      "findBig2Heading": "Çdo organizatë ndërtohet nga njerëzit e saj, dhe ata njerëz përcaktojnë suksesin e saj. Prandaj puna jonë shkon përtej mbushjes së vendeve të lira.",
+      "findParagraph1": "Cloud Konektion ",
+      "findParagraph2": "është e përkushtuar ndaj suksesit të çdo punëdhënësi dhe çdo profesionisti që ne mbështesim. Ne e njohim se çdo klient dhe kandidat është unik, dhe çdo bashkëpunim e trajtojmë me saktësi, përkushtim dhe integritet."
+    },
+    "employer": {
+      "employerExaperence": "Vite Eksperience",
+      "employerHeading1": "SHËRBIM I GJITHËPËRFSHIRËS HR ",
+      "employerHeading2": "PËR PUNËDHËNËSIT",
+      "employerparagraph": "Ne ofrojmë zgjidhje të plota rekrutimi të krijuara për të siguruar talent të nivelit të lartë për biznesin tuaj.",
+      "section1employerHeading1": "Kërkim i talenteve",
+      "section1employeroara": "Kjo është më shumë se thjesht gjetja e kandidatëve; është arti strategjik i identifikimit dhe angazhimit të profesionistëve me kalibër të lartë që sjellin vlerë të matshme dhe avantazh konkurrues.",
+      "section2employerHeading1": "Rekrutimi",
+      "section2employeroara": "Një proces i strukturuar i kërkimit, tërheqjes dhe përzgjedhjes së kandidatëve për role të ndryshme brenda organizatës tuaj. Rekrutuesit tanë përdorin mjete moderne, komunikime të synuara dhe strategji të bazuara në të dhëna për t’ju lidhur me njerëzit e duhur.",
+      "employerbutton": "Më shumë informacion për Punëdhënësit"
+    },
+    "service": {
+      "serviceTopHeading": "SHËRBIME PËR APLIKANTËT",
+      "serviceHeading1": "Si të dalloheni në",
+      "serviceHeading2": "tregun e punës sot.",
+      "servicePara": "Nëse po kërkoni një mundësi të re, ne do t’ju ndihmojmë të prezantoheni me besim dhe qartësi, duke maksimizuar shanset tuaja për të siguruar rolin ideal.",
+      "serviceButton": "Më shumë informacion për Aplikantët",
+      "servicesInterviewheading": "Përgatitje Intervistash",
+      "serviceInterviewPara": "Fitoni vetëbesim me teknika të personalizuara intervistimi, simulime dhe udhëzime praktike.",
+      "serviceCvHeading": "Përmirësim i CV-së & Profilit LinkedIn",
+      "serviceCvPara": "Tregoni pikat tuaja të forta me një CV të rafinuar dhe profil LinkedIn të optimizuar për të lënë përshtypje të fortë.",
+      "serviceLaborHeading": "Analizë e Tregut të Punës",
+      "serviceLaborPara": "Eksploroni mundësi karriere në industri dhe rajone të ndryshme me analizat tona të detajuara, duke ju ndihmuar të synoni pozicionet më të përshtatshme.",
+      "serviceParsonalHeading": "Vlerësime të Personalitetit",
+      "serviceParsonalPara": "Zbuloni pikat tuaja të forta, motivimet dhe stilin ideal të punës për të siguruar një përputhje më të mirë midis jush dhe punëdhënësve të mundshëm.",
+      "serviceStat1": "rajon strategjik",
+      "serviceStat2": "ekzekutivë të nivelit të lartë të vendosur",
+      "serviceStat3": "normë suksesi në vendosje",
+      "serviceStat4": "vite ekselence në rekrutim"
+    },
+    "ourCliend": {
+      "cliendTopHeading": "STUDIME RASTI & REFERENCA KLIENTËSH",
+      "cliendHeading1": "Si kemi arritur rezultate për ",
+      "cliendHeading2": "klientët tanë",
+      "cliendHeadhuntingHead": "Kërkim i talenteve",
+      "cliendHeadhuntingPara": "Një kompani globale kërkonte urgjentisht të plotësonte një rol të specializuar pasi agjencia e mëparshme nuk arriti të sillte kandidatë të përshtatshëm. Gjatë konsultimit, zbuluam kërkesa tepër të kufizuara teknike që po pengonin kërkimin. Duke rafinuar kriteret dhe duke përdorur bazën tonë të gjerë të talenteve, ne paraqitëm tre kandidatë të përzgjedhur brenda vetëm dy javësh, dy prej të cilëve rezultuan perfekt si teknikisht ashtu edhe kulturor.",
+      "clientRecuitHead": "Rekrutimi",
+      "clientRecuitPara": "Një kompani kërkonte një përfaqësues shitjesh proaktiv me lidhje të forta brenda industrisë. Megjithëse roli dukej i përshtatshëm për headhunting, ne zbatuam një strategji më të gjerë rekrutimi që kombinoi reklama të synuara, fushata marketingu, outreach në rrjete sociale dhe kërkime në databazë. Brenda dy javësh, identifikuam dhe siguruam një kandidat me profil personaliteti dhe përvojë profesionale të përkryer për kërkesat e rolit."
+    },
+    "compitator": {
+      "compitatorHeading": "Shërbime të Specializuara Rekrutimi – Fuqizuar nga Ekspertiza Jonë",
+      "compitatorButton": "Dua njerëzit më të mirë."
+    },
+    "formModel": {
+      "formHeading": "Na kontaktoni",
+      "formPara": "Jeni të interesuar për shërbimet tona? Plotësoni formularin e shkurtër dhe ne do t’ju kontaktojmë së shpejti.",
+      "name": "Emri*",
+      "company": "Kompania*",
+      "phone": "Kontakti i telefonit*",
+      "email": "Email*",
+      "report": "Mesazhi",
+      "policy": "Kam lexuar Politikën e Përpunimit të të Dhënave Personale",
+      "button": "Dërgo →"
+    },
+    "banner": {
+      "bannerHeading": "Shërbime të Specializuara Rekrutimi – Fuqizuar nga Ekspertiza Jonë",
+      "bannerPara1": "Përveç zgjidhjeve standarde të punësimit,",
+      "bannerPara2": "Cloud Konektion",
+      "bannerPara3": "ofron mbështetje të specializuar rekrutimi të përshtatur për bizneset me nevoja unike punonjësish.",
+      "bannerSecHeading": "Ekspertizë në industri të ndryshme",
+      "bannerThiHeading": "Punësim i shpejtë dhe i besueshëm",
+      "bannerFortHeading": "Pula të ndryshme talenti",
+      "bannerFiftHeading": "Vendosje të qëndrueshme",
+      "bannerLink": "Më shumë rreth shërbimit"
+    }
+  },
+  "employeepage": {
+    "heroEmployee": {
+      "heroEmployeeTopHeading": "PËR PUNËDHËNËSIT",
+      "heroEmployeeHeading": "Ne ofrojmë zgjidhje të plota rekrutimi të dizajnuara për të siguruar talent të nivelit të lartë për biznesin tuaj.",
+      "heroHuntingHead": "Headhunting",
+      "heroHuntingPara": "Kjo shkon përtej kërkimit të thjeshtë të kandidatëve; është një proces strategjik i identifikimit dhe angazhimit të profesionistëve të nivelit të lartë, ekspertiza e të cilëve ofron vlerë të matshme dhe krijon një avantazh të qëndrueshëm konkurrues për biznesin tuaj.",
+      "heroHuntingLink": "Më shumë Informacion",
+      "heroRecuitHead": "Rekrutimi",
+      "heroRecuitPara": "Një proces i optimizuar i dizajnuar për të kërkuar, tërhequr dhe përzgjedhur kandidatët e duhur për role të ndryshme brenda organizatës suaj. Duke shfrytëzuar mjete moderne, qasje të synuara dhe strategji të bazuara në të dhëna, rekrutuesit tanë sigurojnë që ju të lidheni me talentin që përshtatet vërtet me nevojat e biznesit tuaj.",
+      "heroRecuitLink": "Më shumë Informacion"
+    },
+    "headHunting": {
+      "headHuntingTopHeading": "Headhunting",
+      "headHuntingHeading": "Si funksionon Headhunting në Cloud Konektion",
+      "headHuntingPara": "Headhunterët e Cloud Konektion janë të specializuar në kërkimin e profesionistëve të nivelit të lartë që aktualisht shkëlqejnë në organizata të tjera. Këta individë shpesh sjellin saktësisht aftësitë dhe përvojën që i duhen biznesit tuaj. Përmes një qasjeje të synuar, ne i identifikojmë, i angazhojmë dhe u paraqesim atyre mundësi të përshtatura që përputhen me ambiciet e tyre të karrierës dhe me qëllimet e kompanisë suaj."
+    },
+    "success": {
+      "successHeading": "Pse Headhunting është i rëndësishëm për suksesin tuaj",
+      "successPara1": "Në tregun konkurrues të punës së sotme, tërheqja dhe mbajtja e performuesve më të mirë është jetike. Shumë nga profesionistët më të talentuar nuk janë aktivisht në kërkim të roleve të reja. Përmes shërbimeve tona të headhunting,",
+      "successPara2": "Cloud Konektion",
+      "successPara3": "ju mundëson të arrini përtej kanaleve tradicionale dhe të lidheni drejtpërdrejt me këtë grup të jashtëzakonshëm talenti."
+    },
+    "advantage": {
+      "advantageTopHeading": "Avantazhet e Headhunting nga Cloud Konektion",
+      "advantageHeadingStats1": "Akses në Talente Pasive",
+      "advantageParaStats1": "Angazhoni profesionistë që nuk janë aktivisht në kërkim pune, duke i dhënë biznesit tuaj mundësinë për të siguruar kandidatë të rrallë dhe të jashtëzakonshëm.",
+      "advantageHeadingStats2": "Ekspertizë e Fokusuar në Industri",
+      "advantageParaStats2": "Headhunterët tanë janë të specializuar në industri dhe funksione specifike, duke siguruar një kuptim më të thellë të nevojave tuaja dhe përshtatje më të sakta të kandidatëve.",
+      "advantageHeadingStats3": "Proces Efikas & Diskret",
+      "advantageParaStats3": "Bashkëpunimi me ekspertët tanë kursen kohë dhe burime të vlefshme duke garantuar një kërkim profesional, konfidencial dhe të orientuar drejt rezultateve."
+    },
+    "professional": {
+      "professionalHeading": "Duke shfrytëzuar ekspertizën tonë dhe rrjetin e gjerë të profesionistëve, ju mund të përshpejtoni procesin e rekrutimit, të siguroni talent të nivelit të lartë dhe të arrini sukses të qëndrueshëm afatgjatë. Së bashku, do të gjejmë 'unicorn'-in tuaj.",
+      "professionalButton": "Dua njerëzit më të mirë."
+    },
+    "workRecuit": {
+      "workRecuitTopHeading": "Rekrutimi",
+      "workRecuitHeading": "Si funksionon Rekrutimi në Cloud Konektion",
+      "workRecuitPara": "Specialistët tanë të rekrutimit ndjekin një proces të strukturuar të krijuar për të siguruar përshtatjen e duhur për organizatën tuaj. Nga publikimi i vendeve të punës në platforma të synuara dhe shqyrtimi i kujdesshëm i CV-ve, deri te koordinimi i intervistave dhe verifikimi i referencave, çdo hap trajtohet me kujdes. Përtej aftësive dhe përvojës, ne i japim përparësi përshtatjes kulturore dhe të vlerave për të siguruar që kandidatët të integrohen në mënyrë të përkryer në ekipin tuaj, duke ndihmuar në ndërtimin e forcave të punës të qëndrueshme dhe të suksesshme afatgjatë."
+    },
+    "successSection": {
+      "title": "Pse Rekrutimi është thelbësor për suksesin e biznesit",
+      "description": "Rekrutimi vendos bazat për një forcë pune produktive dhe të motivuar. Në Cloud Konektion, ne e njohim se vendimet e duhura të punësimit ndikojnë ndjeshëm në moralin, efikasitetin dhe kulturën e kompanisë. Kjo është arsyeja pse ne përshtatim çdo proces rekrutimi për të përmbushur nevojat specifike të çdo punëdhënësi me të cilin bashkëpunojmë."
+    },
+    "parsonality": {
+      "parsonalityHeading": "Vlerësime të Personalitetit",
+      "parsonalityPara": "Vlerësimet tona të personalitetit ofrojnë njohuri të vlefshme mbi stilet e sjelljes dhe motivimet në vendin e punës të kandidatëve. Ato ndihmojnë të zbulohet nëse një individ është më shumë introvert apo ekstrovert, nëse motivimi i tyre fokusohet në arritjen e qëllimeve apo ndërtimin e marrëdhënieve, si zhvillohen tiparet e tyre me kalimin e kohës dhe çdo sfidë e mundshme që mund të ndikojë në performancën afatgjatë. Këto njohuri mbështesin vendime më të mençura punësimi dhe sigurojnë përshtatje më të fortë midis kandidatëve dhe nevojave organizative."
+    }
+  },
+  "applicant": {
+    "heroApplicant": {
+      "heroTopHeading": "Shërbime për Kandidatët",
+      "heroHeading": "Si të keni sukses në tregun e sotëm të punës.",
+      "heroSubHeading1": "Konsultime",
+      "heroSubPara1": "Konsultimet tona për kandidatët janë të përshtatura për t’ju ndihmuar të shfaqni vetëbesim dhe profesionalizëm. Me udhëzime nga ekspertët, do të përmirësoni teknikat tuaja të intervistës, do të forconi markën tuaj personale dhe do të rrisni shanset për të siguruar rolin që përputhet më mirë me aftësitë dhe ambiciet tuaja.",
+      "heroSubHeading2": "Vlerësime të Personalitetit",
+      "heroSubPara2": "Ne ofrojmë vlerësime të personalitetit që ju dhe punëdhënësit e mundshëm të kuptoni më mirë pikat tuaja të forta, motivimet dhe stilin ideal të punës. Këto njohuri mundësojnë përshtatje më të mirë pune dhe zhvillim më të fortë të karrierës."
+    },
+    "opertunity": {
+      "opertunityHeading": "Konsultime me Kandidatët – Jini Gati për Mundësi të Reja",
+      "opertunityPara": "Konsultimet tona shkojnë përtej përgatitjes për intervista, duke ofruar mbështetje në përmirësimin e CV-së suaj, optimizimin e profilit në LinkedIn dhe rritjen e dukshmërisë tuaj tek punëdhënësit. Duke mprehur aftësitë tuaja të prezantimit dhe forcuar markën tuaj profesionale, ne sigurojmë që ju të dalloheni në një treg konkurrues dhe të rrisni mundësitë për të fituar rolin që dëshironi vërtet."
+    },
+    "consultation": {
+      "consltationHeading": "Shërbimet tona të Konsultimit përfshijnë:",
+      "consltationService1": "Përgatitje dhe trajnim për intervistë",
+      "consltationService2": "Redaktim dhe përmirësim i CV-së",
+      "consltationService3": "Optimizim i profilit në LinkedIn",
+      "consltationService4": "Njohuri për tregun e punës dhe udhëzime për karrierën",
+      "consltationService5": "Intervista provë për ndërtimin e vetëbesimit",
+      "consltationService6": "Vlerësime të personalitetit për vetëdije më të thellë"
+    },
+    "inprove": {
+      "inproveHeading": "Ne lidhim individë të aftë dhe punëtorë me punëdhënës që vlerësojnë përkushtimin, mjeshtërinë dhe besueshmërinë. Nëse jeni në kërkim të punës me kohë të plotë, të pjesshme ose me kontratë, vendet tona të punës mbulojnë një gamë të gjerë rolesh në sektorë të ndryshëm.",
+      "inporvePara": "Qëllimi ynë është t’ju ndihmojmë të gjeni punësim të qëndrueshëm që përputhet me aftësitë dhe përvojën tuaj, ndërkohë që hap dyer për mundësi të reja për rritje profesionale.",
+      "inproveButton": "Dua njerëzit më të mirë."
+    }
+  },
+  "about": {
+    "heroAbout": {
+      "heroTopHeading": "RRETH NESH",
+      "heroHeading": "10 Vite Ekspertizë në Rekrutim",
+      "heroPara1": "Prej një dekade, ",
+      "heroPara2": "Cloud Konektion",
+      "heroPara3": "është një emër i besuar në fushën e rekrutimit dhe kërkimit të talenteve, i specializuar në plotësimin e pozicioneve të vështira në një gamë të gjerë sektorësh. Shumë prej këtyre roleve kërkojnë aftësi të rralla ose kombinime të veçanta gjuhësh, dhe ekipi ynë ndërthur ekspertizën e provuar me mjete të fuqizuara nga inteligjenca artificiale dhe teknologji moderne për të ofruar kërkime më të shpejta, më të sakta dhe kontakte të synuara. Përtej rekrutimit, ne punojmë në mënyrë fleksibile online, qëndrojmë aktivë në ngjarje profesionale të rrjetëzimit dhe, me mbështetjen e partneriteteve strategjike, u ofrojmë klientëve qasje në shërbime shtesë në arsim dhe zhvillim personal."
+    },
+    "whatValue": {
+      "valueHeading": "Vlerat Tona",
+      "valueStatsTitle1": "Cilësia",
+      "valueStatsDescription1": "Ne jemi të përkushtuar të ofrojmë shërbime rekrutimi me standardin më të lartë. Përmes inovacionit të vazhdueshëm dhe përmirësimit të proceseve, synojmë jo vetëm të përmbushim, por të tejkalojmë pritshmëritë e klientëve. Për ne, cilësia është gur themeli i suksesit afatgjatë.",
+      "valueStatsTitle2": "Fleksibiliteti",
+      "valueStatsDescription2": "Në botën e sotme që ndryshon me shpejtësi, përshtatshmëria është çelësi. Ne krenohemi që ofrojmë zgjidhje fleksibile që reagojnë shpejt dhe me efikasitet ndaj nevojave unike të çdo klienti.",
+      "valueStatsTitle3": "Partneriteti",
+      "valueStatsDescription3": "Ne besojmë se partneritetet e forta dhe afatgjata nxisin rritje të ndërsjellë. Ndërtimi i besimit me klientët dhe partnerët e biznesit është thelbësor për misionin tonë, duke krijuar një themel të qëndrueshëm për suksesin e ardhshëm."
+    }
+  },
+  "footer": {
+    "footerFront": "Cloud Konektion",
+    "footerPara": "Ne gjejmë talente të jashtëzakonshme për kompaninë tuaj",
+    "footerContact": "Na kontaktoni",
+    "footerOffice": "Zyra",
+    "footerAddress": "Adresa:",
+    "footerLink1": "Kreu",
+    "footerLink2": "Punëdhënësit",
+    "footerLink3": "Aplikantët",
+    "footerLink4": "Rreth Nesh",
+    "footertext": "Lidhje"
+  }
+}

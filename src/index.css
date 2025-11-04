@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #f4f4f2;
+  /* --color-primary: #dd0525; */
+  --color-primary: #46c0dc;
+  --color-secondary: #192c33;
+  --font-sans: "Lexend", sans-serif;
+  --font-display: "Epilogue", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@keyframes border-spin {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-border {
+  background-size: 200% 200%;
+  animation: border-spin 3s linear infinite;
+}
+@keyframes image-spin {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-image {
+  background: linear-gradient(270deg, #46c0dc, #000, #46c0dc);
+  background-size: 200% 200%;
+  animation: image-spin 3s linear infinite;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: var(--font-sans);
+}

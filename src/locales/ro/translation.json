@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "employers": "Angajatori",
+    "applicants": "Candidați",
+    "about": "Despre noi",
+    "contact": "Contact",
+    "language": "Limba",
+    "career":"Careers"
+  },
+  "homepage": {
+    "hero": {
+      "heroTopTitle": "RECRUTARE & HEADHUNTING",
+      "heroBigTitle": "Găsim talente excepționale pentru compania dumneavoastră.",
+      "heropara1": "Un adevărat unicorn, un profesionist excepțional a cărui expertiză și valoare sunt rare pe piață poate simți ca și cum ai găsi un ac în carul cu fân. În timp ce alții se luptă să descopere astfel de talente, ",
+      "heropara2": "Cloud Konektion ",
+      "heropara3": "excelă în a oferi potrivirea perfectă cu precizie și viteză."
+    },
+    "brand": {
+      "brandText": "Parteneri de peste 10 ani pentru oferirea de soluții HR de încredere"
+    },
+    "finding": {
+      "findTopHeading": "DINCOLO DE ANGAJARE, CREĂM IMPACT",
+      "findBig1Heading": "Găsirea persoanei potrivite este atât o artă, cât și o știință.",
+      "findBig2Heading": "Fiecare organizație este construită de oamenii săi, iar acești oameni îi determină succesul. De aceea, munca noastră merge dincolo de simpla ocupare a posturilor vacante.",
+      "findParagraph1": "Cloud Konektion ",
+      "findParagraph2": "este dedicată succesului fiecărui angajator și profesionist pe care îl deservim. Recunoaștem că fiecare client și candidat este unic și abordăm fiecare colaborare cu precizie, devotament și integritate."
+    },
+    "employer": {
+      "employerExaperence": "Ani de experiență",
+      "employerHeading1": "SERVICII COMPLETE DE HR",
+      "employerHeading2": "PENTRU ANGAJATORI",
+      "employerparagraph": "Oferim soluții complete de recrutare concepute pentru a asigura talente de top pentru afacerea dumneavoastră.",
+      "section1employerHeading1": "Head-hunting",
+      "section1employeroara": "Aceasta este mai mult decât identificarea candidaților; este arta strategică de a identifica și atrage profesioniști de înalt calibru care pot aduce valoare măsurabilă și avantaj competitiv.",
+      "section2employerHeading1": "Recrutare",
+      "section2employeroara": "Un proces structurat de identificare, atragere și selecție a candidaților pentru diverse roluri din cadrul organizației dumneavoastră. Recrutorii noștri folosesc instrumente moderne, abordări țintite și strategii bazate pe date pentru a vă conecta cu persoanele potrivite.",
+      "employerbutton": "Mai multe informații pentru angajatori"
+    },
+    "service": {
+      "serviceTopHeading": "SERVICII PENTRU CANDIDAȚI",
+      "serviceHeading1": "Cum să te remarci pe",
+      "serviceHeading2": "piața actuală a muncii.",
+      "servicePata": "Dacă ești în căutarea unei noi oportunități, te vom ajuta să te prezinți cu încredere și claritate, maximizând șansele de a obține rolul ideal.",
+      "serviceButton": "Mai multe informații pentru candidați",
+      "servicesInterviewheading": "Pregătire pentru interviu",
+      "serviceInterviewPara": "Câștigă încrederea de a reuși prin tehnici personalizate de interviu, simulări și ghidare practică.",
+      "serviceCvHeading": "Îmbunătățirea CV-ului și a profilului LinkedIn",
+      "serviceCvPara": "Evidențiază-ți punctele forte cu un CV rafinat și un profil LinkedIn optimizat pentru a crea o impresie durabilă.",
+      "serviceLaborHeading": "Analiza pieței muncii",
+      "serviceLaborPara": "Explorează oportunități de carieră în diverse industrii și regiuni cu ajutorul analizelor noastre detaliate ale pieței muncii, pentru a viza cele mai potrivite poziții.",
+      "serviceParsonalHeading": "Evaluări de personalitate",
+      "serviceParsonalPara": "Descoperă-ți punctele forte, motivațiile și stilul ideal de lucru prin evaluări care asigură o potrivire mai bună între tine și angajatorii potențiali.",
+      "serviceStat1": "regiuni strategice",
+      "serviceStat2": "directori de top plasați",
+      "serviceStat3": "rata de succes a plasamentelor",
+      "serviceStat4": "ani de excelență în recrutare"
+    },
+    "ourCliend": {
+      "cliendTopHeading": "STUDII DE CAZ ȘI REFERINȚE DE LA CLIENȚI",
+      "cliendHeading1": "Cum am obținut rezultate pentru",
+      "cliendHeading2": "clienții noștri",
+      "cliendHeadhuntingHead": "Head-hunting",
+      "cliendHeadhuntingPara": "O companie globală căuta urgent să ocupe un rol specializat după ce agenția anterioară nu a reușit să livreze candidați potriviți. În urma unei consultări detaliate, am descoperit cerințe tehnice prea restrictive care limitau procesul de căutare. Prin rafinarea criteriilor și utilizarea bazei noastre extinse de talente, am prezentat trei candidați puternici pe lista scurtă în doar două săptămâni, dintre care doi s-au dovedit a fi o potrivire excelentă atât din punct de vedere tehnic, cât și cultural.",
+      "clientRecuitHead": "Recrutare",
+      "clientRecuitPara": "O companie căuta un reprezentant de vânzări proactiv, cu conexiuni solide în industrie. Deși rolul părea mai potrivit pentru headhunting, am implementat o strategie de recrutare mai amplă care a combinat publicitate direcționată, campanii de marketing, promovare pe rețele sociale și căutări în baza de date. În doar două săptămâni, am identificat și asigurat un candidat al cărui profil de personalitate și experiență profesională s-au aliniat perfect cerințelor rolului."
+    },
+    "compitator": {
+      "compitatorHeading": "Servicii de recrutare specializate – bazate pe expertiza noastră",
+      "compitatorButton": "Vreau cei mai buni oameni."
+    },
+    "formModel": {
+      "formHeading": "Contactați-ne",
+      "formPara": "Sunteți interesat de serviciile noastre? Completați formularul scurt și vă vom contacta în curând.",
+      "name": "Nume*",
+      "company": "Companie*",
+      "phone": "Telefon de contact*",
+      "email": "Email*",
+      "report": "Raport",
+      "policy": "Am citit Politica de Prelucrare a Datelor Personale",
+      "button": "Trimite →"
+    },
+    "banner": {
+      "bannerHeading": "Servicii de recrutare specializate – bazate pe expertiza noastră",
+      "bannerPara1": "Pe lângă soluțiile standard de angajare,",
+      "bannerPara2": "Cloud Konektion",
+      "bannerPara3": "oferă suport specializat în recrutare adaptat afacerilor cu nevoi unice de forță de muncă.",
+      "bannerSecHeading": "Expertiză în diverse industrii",
+      "bannerThiHeading": "Angajare rapidă și de încredere",
+      "bannerFortHeading": "Baze diversificate de talente",
+      "bannerFiftHeading": "Plasamente durabile",
+      "bannerLink": "Mai multe despre serviciu"
+    }
+  },
+  "employeepage": {
+    "heroEmployee": {
+      "heroEmployeeTopHeading": "PENTRU ANGAJATORI",
+      "heroEmployeeHeading": "Oferim soluții complete de recrutare concepute pentru a asigura talente de top pentru afacerea dumneavoastră.",
+      "heroHuntingHead": "Head-hunting",
+      "heroHuntingPara": "Aceasta depășește simpla identificare a candidaților; este un proces strategic de identificare și angajare a profesioniștilor de top ale căror competențe oferă valoare măsurabilă și creează un avantaj competitiv durabil pentru afacerea dumneavoastră.",
+      "heroHuntingLink": "Mai multe informații",
+      "heroRecuitHead": "Recrutare",
+      "heroRecuitPara": "Un proces optimizat conceput pentru a identifica, atrage și selecta candidații potriviți pentru diverse roluri în cadrul organizației dumneavoastră. Folosind instrumente moderne, abordări țintite și strategii bazate pe date, recrutorii noștri se asigură că vă conectați cu talente care se potrivesc cu adevărat nevoilor afacerii dumneavoastră.",
+      "heroRecuitLink": "Mai multe informații"
+    },
+    "headHunting": {
+      "headHuntingTopHeading": "Head-hunting",
+      "headHuntingHeading": "Cum funcționează Head-hunting-ul la Cloud Konektion",
+      "headHuntingPara": "Headhunterii Cloud Konektion sunt specializați în identificarea profesioniștilor de înalt calibru care excelează în prezent în alte organizații. Acești indivizi aduc adesea exact competențele și experiența de care afacerea dvs. are nevoie. Printr-o abordare țintită, îi identificăm, îi implicăm și le prezentăm oportunități personalizate care se aliniază atât cu ambițiile lor de carieră, cât și cu obiectivele companiei dvs."
+    },
+    "success": {
+      "successHeading": "De ce Head-hunting-ul contează pentru succesul dvs.",
+      "successPara1": "Pe piața competitivă a muncii de astăzi, atragerea și păstrarea celor mai buni performeri este vitală. Mulți dintre cei mai talentați profesioniști nu caută activ noi roluri. Prin serviciile noastre de head-hunting,",
+      "successPara2": "Cloud Konektion",
+      "successPara3": "vă permite să depășiți canalele tradiționale și să vă conectați direct cu acest grup excepțional de talente."
+    },
+    "advantage": {
+      "advantageTopHeading": "Avantajele Head-hunting-ului Cloud Konektion",
+      "advantageHeadingStats1": "Acces la talente pasive",
+      "advantageParaStats1": "Interacționați cu profesioniști care nu caută activ locuri de muncă, oferindu-i afacerii dvs. oportunitatea de a asigura candidați rari și excepționali.",
+      "advantageHeadingStats2": "Expertiză concentrată pe industrie",
+      "advantageParaStats2": "Headhunterii noștri sunt specializați în industrii și funcții specifice, asigurând o înțelegere mai profundă a nevoilor dvs. și o potrivire mai precisă a candidaților.",
+      "advantageHeadingStats3": "Proces eficient și discret",
+      "advantageParaStats3": "Colaborarea cu experții noștri economisește timp și resurse valoroase, garantând în același timp o căutare profesională, confidențială și orientată spre rezultate."
+    },
+    "professional": {
+      "professionalHeading": "Prin valorificarea expertizei și rețelei noastre extinse de profesioniști, puteți eficientiza procesul de recrutare, asigura talente de top și obține succes sustenabil pe termen lung. Împreună, vom găsi unicornul dvs.",
+      "professionalButton": "Vreau cei mai buni oameni."
+    },
+    "workRecuit": {
+      "workRecuitTopHeading": "Recrutare",
+      "workRecuitHeading": "Cum funcționează recrutarea la Cloud Konektion",
+      "workRecuitPara": "Specialiștii noștri în recrutare urmează un proces structurat conceput pentru a asigura potrivirea ideală pentru organizația dvs. De la publicarea rolurilor pe platforme țintite și examinarea atentă a CV-urilor până la coordonarea interviurilor și efectuarea verificărilor detaliate de referință, fiecare pas este realizat cu atenție. Dincolo de competențe și experiență, prioritizăm alinierea culturală și valorică pentru a asigura integrarea fără probleme a candidaților în echipa dvs., ajutându-vă să construiți forțe de muncă puternice și durabile care generează succes pe termen lung."
+    },
+    "successSection": {
+      "title": "De ce recrutarea este esențială pentru succesul afacerii",
+      "description": "Recrutarea pune bazele unei forțe de muncă productive și motivate. La Cloud Konektion, recunoaștem că deciziile corecte de angajare influențează semnificativ moralul angajaților, eficiența și cultura companiei. De aceea, adaptăm fiecare proces de recrutare pentru a răspunde nevoilor specifice ale fiecărui angajator cu care lucrăm."
+    },
+    "parsonality": {
+      "parsonalityHeading": "Evaluări de personalitate",
+      "parsonalityPara": "Evaluările noastre de personalitate oferă informații valoroase despre stilurile comportamentale și motivațiile candidaților la locul de muncă. Ele ajută la evidențierea dacă o persoană este mai introvertită sau extrovertită, dacă motivația sa este concentrată pe atingerea obiectivelor sau construirea relațiilor, cum se pot dezvolta trăsăturile sale în timp și care sunt provocările potențiale care ar putea afecta performanța pe termen lung. Aceste informații sprijină decizii de angajare mai inteligente și asigură o mai bună aliniere între candidați și nevoile organizației."
+    }
+  },
+  "applicant": {
+    "heroApplicant": {
+      "heroTopHeading": "Servicii pentru candidați",
+      "heroHeading": "Cum să ai succes pe piața muncii de astăzi.",
+      "heroSubHeading1": "Consultări",
+      "heroSubPara1": "Consultările noastre pentru candidați sunt concepute pentru a vă ajuta să demonstrați încredere și profesionalism. Cu ghidaj expert, vă veți perfecționa tehnicile de interviu, veți îmbunătăți brandul personal și veți crește șansele de a obține rolul care se potrivește cel mai bine abilităților și ambițiilor dvs.",
+      "heroSubHeading2": "Evaluări de personalitate",
+      "heroSubPara2": "Oferim evaluări de personalitate care vă ajută pe dvs. și pe potențialii angajatori să înțelegeți mai bine punctele forte, motivațiile și stilul dvs. de lucru ideal. Aceste informații permit o mai bună potrivire a locului de muncă și dezvoltarea unei cariere mai solide."
+    },
+    "opertunity": {
+      "opertunityHeading": "Consultări cu candidații – Fiți pregătiți pentru noi oportunități",
+      "opertunityPara": "Consultările noastre depășesc pregătirea pentru interviuri, oferind suport în rafinarea CV-ului, optimizarea profilului LinkedIn și creșterea vizibilității dvs. în fața angajatorilor. Prin perfecționarea abilităților de prezentare și promovarea brandului profesional, ne asigurăm că ieșiți în evidență pe o piață competitivă și vă creșteți șansele de a obține rolul pe care îl doriți cu adevărat."
+    },
+    "consultation": {
+      "consltationHeading": "Serviciile noastre de consultanță includ:",
+      "consltationService1": "Pregătire și coaching pentru interviuri",
+      "consltationService2": "Editarea și îmbunătățirea CV-ului",
+      "consltationService3": "Optimizarea profilului LinkedIn",
+      "consltationService4": "Informații despre piața muncii și ghidare în carieră",
+      "consltationService5": "Interviuri simulate pentru a crește încrederea",
+      "consltationService6": "Evaluări de personalitate pentru o mai bună autocunoaștere"
+    },
+    "inprove": {
+      "inproveHeading": "Conectăm persoane calificate și harnice cu angajatori care apreciază dedicația, măiestria și fiabilitatea. Indiferent dacă căutați muncă full-time, part-time sau pe bază de contract, ofertele noastre acoperă o gamă largă de roluri în industrii diferite.",
+      "inporvePara": "Obiectivul nostru este să vă ajutăm să găsiți un loc de muncă stabil care să corespundă abilităților și experienței dvs., deschizând totodată uși către noi oportunități de dezvoltare a carierei.",
+      "inproveButton": "Vreau cei mai buni oameni."
+    }
+  },
+  "about": {
+    "heroAbout": {
+      "heroTopHeading": "DESPRE NOI",
+      "heroHeading": "10 Ani de Expertiză în Recrutare",
+      "heroPara1": "Timp de un deceniu, ",
+      "heroPara2": "Cloud Konektion",
+      "heroPara3": "a fost un nume de încredere în recrutare și head-hunting, specializându-se în ocuparea pozițiilor dificile în diverse sectoare. Multe dintre aceste roluri necesită seturi rare de abilități sau combinații unice de limbi, iar echipa noastră combină expertiza dovedită cu instrumente bazate pe AI și tehnologii moderne pentru a oferi căutări mai rapide, mai precise și outreach țintit. Dincolo de recrutare, lucrăm flexibil online, rămânem implicați prin evenimente profesionale de networking și, cu sprijinul parteneriatelor strategice, oferim clienților acces la servicii suplimentare în educație și dezvoltare personală."
+    },
+    "whatValue": {
+      "valueHeading": "Valorile Noastre",
+      "valueStatsTitle1": "Calitate",
+      "valueStatsDescription1": "Suntem dedicați oferirii de servicii de recrutare la cel mai înalt standard. Prin inovație continuă și îmbunătățirea proceselor, ne propunem nu doar să satisfacem, ci să depășim așteptările clienților. Pentru noi, calitatea este piatra de temelie a succesului pe termen lung.",
+      "valueStatsTitle2": "Flexibilitate",
+      "valueStatsDescription2": "În lumea dinamică de astăzi, adaptabilitatea este esențială. Ne mândrim cu oferirea de soluții flexibile care răspund rapid și eficient nevoilor unice ale fiecărui client.",
+      "valueStatsTitle3": "Parteneriat",
+      "valueStatsDescription3": "Credem că parteneriatele puternice și pe termen lung conduc la creștere reciprocă. Construirea încrederii cu clienții și partenerii de afaceri este centrală pentru misiunea noastră, creând o bază stabilă pentru succesul viitor."
+    }
+  },
+  "footer": {
+    "footerFront": "Cloud Konektion",
+    "footerPara": "Găsim talente excepționale pentru compania dvs.",
+    "footerContact": "Contactați-ne",
+    "footerOffice": "Birou",
+    "footerAddress": "Adresă:",
+    "footerLink1": "Acasă",
+    "footerLink2": "Angajatori",
+    "footerLink3": "Candidați",
+    "footerLink4": "Despre Noi",
+    "footertext": "Linkuri"
+  }
+}
