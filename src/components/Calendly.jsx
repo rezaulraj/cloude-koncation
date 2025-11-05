@@ -70,7 +70,7 @@ const Calendly = ({ show, onClose }) => {
 
               {loading && (
                 <div className="flex-1 flex items-center justify-center">
-                  <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-[#e60c30] border-opacity-75"></div>
+                  <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-primary border-opacity-75"></div>
                 </div>
               )}
 

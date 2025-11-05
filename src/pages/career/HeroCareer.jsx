@@ -95,10 +95,18 @@ const HeroCareer = () => {
   ];
 
   const perks = [
-    { icon: FaClock, text: "Flexible Hours", color: "text-green-400" },
-    { icon: FaHandshake, text: "100% Job Placement", color: "text-green-400" },
-    { icon: FaChartLine, text: "100% Career Growth", color: "text-blue-400" },
-    { icon: FaShieldAlt, text: "100% Job Security", color: "text-red-400" },
+    { icon: FaClock, text: t("career.careerstat1"), color: "text-green-400" },
+    {
+      icon: FaHandshake,
+      text: t("career.careerstat2"),
+      color: "text-green-400",
+    },
+    {
+      icon: FaChartLine,
+      text: t("career.careerstat3"),
+      color: "text-blue-400",
+    },
+    { icon: FaShieldAlt, text: t("career.careerstat4"), color: "text-red-400" },
   ];
 
   return (
@@ -153,7 +161,7 @@ const HeroCareer = () => {
           >
             <FaStar className="w-5 h-5 text-yellow-400 animate-pulse" />
             <span className="text-white/90 text-sm font-semibold tracking-wide">
-              {t("career.hero.badge", "We're Hiring Amazing Talent")}
+              {t("career.careertoph")}
             </span>
             <FaRocket className="w-4 h-4 text-cyan-400" />
           </motion.div>
@@ -163,15 +171,15 @@ const HeroCareer = () => {
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
             <span className="bg-yellow-400 bg-clip-text text-transparent">
-              {t("career.hero.title", "Welcome to ")}
+              {t("career.careerh1")}
             </span>
             <br />
             <span className="bg-primary bg-clip-text text-transparent">
-              {t("career.hero.subtitle", "Cloud Koncation")}{" "}
+              {t("career.careerh2")}
             </span>
             <br />
             <span className="bg-yellow-400 bg-clip-text text-transparent">
-              {t("career.hero.subtitle", "Careers")}
+              {t("career.careerh3")}
             </span>
           </motion.h1>
 
@@ -219,9 +227,7 @@ const HeroCareer = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               <FaBriefcase className="w-6 h-6 group-hover:scale-110 transition-transform z-10" />
-              <span className="z-10">
-                {t("career.hero.cta.primary", "View Open Positions")}
-              </span>
+              <span className="z-10">{t("career.careerbtn1")}</span>
               <FaRocket className="w-5 h-5 group-hover:translate-x-1 transition-transform z-10" />
             </motion.button>
 
@@ -235,7 +241,7 @@ const HeroCareer = () => {
               whileTap={{ scale: 0.95 }}
             >
               <FaUsers className="w-6 h-6 group-hover:scale-110 transition-transform" />
-              {t("career.hero.cta.secondary", "Meet Our Team")}
+              {t("career.careerbtn2")}
             </motion.button>
           </motion.div>
         </motion.div>
