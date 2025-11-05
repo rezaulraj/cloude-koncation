@@ -76,7 +76,7 @@ const Calendly = ({ show, onClose }) => {
 
               <div
                 className="calendly-inline-widget flex-1"
-                data-url="https://calendly.com/group1971-rec-meetting/30min"
+                data-url="https://calendly.com/cloud-conektion-qwikhr/30min"
                 style={{
                   width: "100%",
                   height: "100%",
