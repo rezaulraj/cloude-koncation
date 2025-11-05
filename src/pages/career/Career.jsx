@@ -4,7 +4,7 @@ import JobShow from "./JobcShow";
 
 const Career = () => {
   return (
-    <div className="min-h-screen py-20">
+    <div className="min-h-screen">
       <HeroCareer />
       <JobShow />
     </div>
