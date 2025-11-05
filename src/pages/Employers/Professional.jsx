@@ -147,7 +147,7 @@ const Professional = () => {
           >
             <button
               onClick={() => setIsOpen(true)}
-              className="text-[20px] cursor-pointer font-bold font-sans text-white bg-primary px-10 py-3 rounded-4xl mt-5 relative overflow-hidden"
+              className="text-[20px] cursor-pointer font-bold font-sans text-white bg-primary hover:bg-secondary px-10 py-3 rounded-4xl mt-5 relative overflow-hidden"
             >
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12"

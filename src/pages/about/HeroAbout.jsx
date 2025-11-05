@@ -208,14 +208,14 @@ const HeroAbout = () => {
               style={{ width: "320px", height: "320px" }}
               variants={mainImageVariants}
             >
-              <div className="w-full h-full rounded-4xl overflow-hidden bg-white shadow-2xl">
+              <div className="w-full h-full rounded-4xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/aboutus.png"
+                  src="/logo.png"
                   alt="About Us"
                   width={320}
                   height={320}
                   priority
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
 

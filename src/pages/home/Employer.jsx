@@ -10,7 +10,6 @@ const Employer = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.3 });
 
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -154,9 +153,7 @@ const Employer = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          {/* Left Column - Images */}
           <div className="relative">
-            {/* Rotating Background Circle */}
             <motion.div
               className="inset-0 z-0 absolute flex justify-center items-center max-w-[500px]"
               variants={roundImageVariants}
@@ -171,7 +168,6 @@ const Employer = () => {
               />
             </motion.div>
 
-            {/* Main Image */}
             <motion.div
               className="relative z-10 max-w-[500px] h-auto"
               variants={imageVariants}
@@ -185,7 +181,6 @@ const Employer = () => {
               />
             </motion.div>
 
-            {/* Experience Card */}
             <motion.div
               className="absolute rounded-4xl flex flex-col justify-center items-center bottom-0 left-0 p-5 z-10 w-48 h-48 bg-primary"
               variants={experienceCardVariants}
@@ -210,7 +205,6 @@ const Employer = () => {
             </motion.div>
           </div>
 
-          {/* Right Column - Content */}
           <div className="flex flex-col justify-center items-start">
             <motion.span
               className="text-[17px] text-primary font-normal font-sans"
@@ -234,7 +228,6 @@ const Employer = () => {
             </motion.p>
 
             <div className="w-full">
-              {/* Feature Card 1 */}
               <motion.div
                 className="bg-white p-4 flex items-start rounded-2xl w-full mt-5 shadow-lg"
                 variants={featureCardVariants}
@@ -256,7 +249,6 @@ const Employer = () => {
                 </div>
               </motion.div>
 
-              {/* Feature Card 2 */}
               <motion.div
                 className="bg-white p-4 flex rounded-2xl items-start w-full mt-5 shadow-lg"
                 variants={featureCardVariants}
@@ -279,14 +271,13 @@ const Employer = () => {
                 </div>
               </motion.div>
 
-              {/* Button */}
               <motion.div
                 variants={buttonVariants}
                 // whileHover="hover"
                 whileTap="tap"
               >
                 <Link to="/employers">
-                  <button className="bg-primary text-white text-[16px] font-sans cursor-pointer rounded-full px-10 py-3 flex justify-center items-center mt-5 duration-300 ">
+                  <button className="bg-primary hover:bg-secondary text-white text-[16px] font-sans cursor-pointer rounded-full px-10 py-3 flex justify-center items-center mt-5 duration-300 ">
                     {t("homepage.employer.employerbutton")}
                   </button>
                 </Link>
