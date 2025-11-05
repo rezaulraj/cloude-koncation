@@ -9,7 +9,6 @@ const Success = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.3 });
 
-  // Animation variants - No movement that affects layout
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -151,7 +150,6 @@ const Success = () => {
 
   return (
     <section className="py-20 bg-[#F4F4F2] relative overflow-hidden" ref={ref}>
-      {/* Static background elements - no movement */}
       <div className="absolute top-20 left-20 w-16 h-16 bg-primary/10 rounded-full blur-lg" />
       <div className="absolute bottom-20 right-20 w-12 h-12 bg-secondary/10 rounded-full blur-lg" />
 
@@ -162,13 +160,11 @@ const Success = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          {/* Image Section - No movement */}
           <motion.div
             className="flex justify-center items-center relative"
             variants={imageContainerVariants}
             whileHover="hover"
           >
-            {/* Rotating Round Background - Only rotation, no position change */}
             <motion.div
               className="absolute inset-0 flex justify-center items-center"
               variants={roundImageVariants}
@@ -183,7 +179,6 @@ const Success = () => {
               />
             </motion.div>
 
-            {/* Main Image Container */}
             <motion.div
               className="relative z-10"
               variants={mainImageVariants}
@@ -200,11 +195,9 @@ const Success = () => {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
                 />
 
-                {/* Static overlay on hover */}
                 <div className="absolute inset-0 bg-primary/0 hover:bg-primary/10 transition-all duration-500" />
               </div>
 
-              {/* Decorative elements with scale pulse only */}
               <motion.div
                 className="absolute top-2 right-2 w-6 h-6 bg-primary/30 rounded-full"
                 variants={scalePulse}
@@ -218,11 +211,9 @@ const Success = () => {
               />
             </motion.div>
 
-            {/* Outer static ring */}
             <div className="absolute w-96 h-96 border border-primary/20 rounded-4xl" />
           </motion.div>
 
-          {/* Content Section - No movement */}
           <motion.div
             className="flex flex-col justify-center items-start"
             variants={contentVariants}
@@ -253,7 +244,6 @@ const Success = () => {
               {t("employeepage.success.successPara3")}
             </motion.p>
 
-            {/* Static success indicators */}
             <motion.div
               className="flex items-center space-x-4 mb-8"
               variants={textVariants}
@@ -291,20 +281,28 @@ const Success = () => {
                 variants={pulseOpacity}
                 animate="animate"
               >
-                ✓ Success Guaranteed
+                ✓ {t("employeepage.success.successpart")}
               </motion.span>
             </motion.div>
 
-            {/* Success metrics - No movement */}
             <motion.div
               className="grid grid-cols-3 gap-4 w-full max-w-md"
               variants={textVariants}
               transition={{ delay: 0.3 }}
             >
               {[
-                { number: "98%", label: "Success Rate" },
-                { number: "24/7", label: "Support" },
-                { number: "100+", label: "Clients" },
+                {
+                  number: "98%",
+                  label: t("employeepage.success.successtats1"),
+                },
+                {
+                  number: "24/7",
+                  label: t("employeepage.success.successtats2"),
+                },
+                {
+                  number: "100+",
+                  label: t("employeepage.success.successtats3"),
+                },
               ].map((metric, index) => (
                 <motion.div
                   key={index}

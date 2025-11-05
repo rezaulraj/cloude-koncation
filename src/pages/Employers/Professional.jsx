@@ -11,7 +11,6 @@ const Professional = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.3 });
 
-  // Animation variants - No movement, just visual effects
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -109,7 +108,6 @@ const Professional = () => {
       animate="animate"
       transition={{ duration: 6, repeat: Infinity }}
     >
-      {/* Background decorative elements - no movement */}
       <motion.div
         className="absolute top-10 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl"
         variants={pulseAnimation}
@@ -135,7 +133,6 @@ const Professional = () => {
           animate={isInView ? "visible" : "hidden"}
           className="space-y-6"
         >
-          {/* Title */}
           <motion.h2
             className="text-[33px] font-medium font-sans text-secondary"
             variants={titleVariants}
@@ -143,7 +140,6 @@ const Professional = () => {
             {t("employeepage.professional.professionalHeading")}
           </motion.h2>
 
-          {/* CTA Button */}
           <motion.div
             variants={buttonVariants}
             // whileHover="hover"
@@ -153,7 +149,6 @@ const Professional = () => {
               onClick={() => setIsOpen(true)}
               className="text-[20px] cursor-pointer font-bold font-sans text-white bg-primary px-10 py-3 rounded-4xl mt-5 relative overflow-hidden"
             >
-              {/* Button shine effect */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12"
                 initial={{ x: "-100%" }}
@@ -163,7 +158,6 @@ const Professional = () => {
                 }}
               />
 
-              {/* Button text */}
               <span className="relative z-10">
                 {t("employeepage.professional.professionalButton")}
               </span>
@@ -171,14 +165,17 @@ const Professional = () => {
           </motion.div>
         </motion.div>
 
-        {/* Professional indicators */}
         <motion.div
           className="flex justify-center space-x-8 mt-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
         >
-          {["Expert", "Quality", "Trusted"].map((text, index) => (
+          {[
+            t("employeepage.professional.stats1"),
+            t("employeepage.professional.stats2"),
+            t("employeepage.professional.stats3"),
+          ].map((text, index) => (
             <motion.div
               key={index}
               className="flex items-center space-x-2"

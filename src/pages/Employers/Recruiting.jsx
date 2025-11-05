@@ -7,7 +7,6 @@ const Recruiting = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.3 });
 
-  // Animation variants - No movement, just visual effects
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -116,7 +115,6 @@ const Recruiting = () => {
 
   return (
     <section className="py-20 bg-[#F4F4F2] relative overflow-hidden" ref={ref}>
-      {/* Static background elements */}
       <div className="absolute top-10 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl" />
       <div className="absolute bottom-10 right-10 w-16 h-16 bg-secondary/10 rounded-full blur-xl" />
 
@@ -127,7 +125,6 @@ const Recruiting = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          {/* Content Section */}
           <motion.div
             className="flex flex-col justify-center items-start"
             variants={contentVariants}
@@ -170,7 +167,6 @@ const Recruiting = () => {
               directly with this exceptional talent pool.
             </motion.p>
 
-            {/* Animated progress bar */}
             <motion.div
               className="w-full h-1 bg-gray-200 rounded-full mt-6 overflow-hidden max-w-md"
               initial={{ opacity: 0 }}
@@ -185,7 +181,6 @@ const Recruiting = () => {
               />
             </motion.div>
 
-            {/* Success indicators */}
             <motion.div
               className="flex items-center space-x-4 mt-6"
               variants={textVariants}
@@ -228,12 +223,10 @@ const Recruiting = () => {
             </motion.div>
           </motion.div>
 
-          {/* Image Section - No movement */}
           <motion.div
             className="flex justify-center items-center relative"
             variants={imageContainerVariants}
           >
-            {/* Rotating Round Image - Only rotation, no position change */}
             <motion.div
               className="flex justify-center items-center"
               variants={roundImageVariants}
@@ -248,7 +241,6 @@ const Recruiting = () => {
               />
             </motion.div>
 
-            {/* Decorative elements with scale pulse only */}
             <motion.div
               className="absolute top-2 right-2 w-6 h-6 bg-primary/30 rounded-full"
               variants={scalePulse}
@@ -263,7 +255,6 @@ const Recruiting = () => {
           </motion.div>
         </motion.div>
 
-        {/* Bottom decorative elements */}
         <motion.div
           className="flex justify-center space-x-8 mt-16"
           initial={{ opacity: 0 }}

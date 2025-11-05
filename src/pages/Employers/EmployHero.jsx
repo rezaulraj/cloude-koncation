@@ -8,14 +8,23 @@ import { useRef } from "react";
 const EmployHero = () => {
   const { t } = useTranslation();
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.3 });
+  const isInView = useInView(ref, { once: true, threshold: 0.2 });
+
+  // Separate refs for each card for individual animations
+  const leftCardRef = useRef(null);
+  const rightCardRef = useRef(null);
+  const leftCardInView = useInView(leftCardRef, { once: true, threshold: 0.1 });
+  const rightCardInView = useInView(rightCardRef, {
+    once: true,
+    threshold: 0.1,
+  });
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
+        staggerChildren: 0.4,
         delayChildren: 0.2,
       },
     },
@@ -25,10 +34,12 @@ const EmployHero = () => {
     hidden: {
       opacity: 0,
       filter: "blur(10px)",
+      y: 30,
     },
     visible: {
       opacity: 1,
       filter: "blur(0px)",
+      y: 0,
       transition: {
         duration: 0.8,
         ease: "easeOut",
@@ -36,22 +47,28 @@ const EmployHero = () => {
     },
   };
 
-  const cardVariants = {
+  // Enhanced card variants with more dynamic entrance
+  const leftCardVariants = {
     hidden: {
       opacity: 0,
-      scale: 0.9,
+      x: -100,
+      y: 50,
+      rotateY: -15,
     },
     visible: {
       opacity: 1,
-      scale: 1,
+      x: 0,
+      y: 0,
+      rotateY: 0,
       transition: {
-        duration: 0.7,
-        ease: "backOut",
+        duration: 0.8,
+        ease: "easeOut",
       },
     },
     hover: {
-      scale: 1.02,
-      boxShadow: "0 25px 50px rgba(0,0,0,0.15)",
+      scale: 1.03,
+      y: -10,
+      boxShadow: "0 30px 60px rgba(0,0,0,0.2)",
       transition: {
         duration: 0.4,
         ease: "easeInOut",
@@ -59,21 +76,84 @@ const EmployHero = () => {
     },
   };
 
-  const imageVariants = {
+  const rightCardVariants = {
     hidden: {
       opacity: 0,
-      scale: 1.1,
+      x: 100,
+      y: 50,
+      rotateY: 15,
     },
     visible: {
       opacity: 1,
-      scale: 1,
+      x: 0,
+      y: 0,
+      rotateY: 0,
       transition: {
-        duration: 0.9,
+        duration: 0.8,
+        ease: "easeOut",
+        delay: 0.1,
+      },
+    },
+    hover: {
+      scale: 1.03,
+      y: -10,
+      boxShadow: "0 30px 60px rgba(0,0,0,0.2)",
+      transition: {
+        duration: 0.4,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  // More dramatic image animations
+  const leftImageVariants = {
+    hidden: {
+      opacity: 0,
+      x: -200,
+      scale: 0.9,
+      rotate: -5,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      rotate: 0,
+      transition: {
+        duration: 1,
         ease: "easeOut",
       },
     },
     hover: {
-      scale: 1.05,
+      scale: 1.08,
+      rotate: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  const rightImageVariants = {
+    hidden: {
+      opacity: 0,
+      x: 200,
+      scale: 0.9,
+      rotate: 5,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      rotate: 0,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        delay: 0.1,
+      },
+    },
+    hover: {
+      scale: 1.08,
+      rotate: 0,
       transition: {
         duration: 0.5,
         ease: "easeInOut",
@@ -84,9 +164,11 @@ const EmployHero = () => {
   const contentVariants = {
     hidden: {
       opacity: 0,
+      y: 20,
     },
     visible: {
       opacity: 1,
+      y: 0,
       transition: {
         duration: 0.6,
         ease: "easeOut",
@@ -99,10 +181,12 @@ const EmployHero = () => {
     hidden: {
       opacity: 0,
       scale: 0.8,
+      y: 20,
     },
     visible: {
       opacity: 1,
       scale: 1,
+      y: 0,
       transition: {
         duration: 0.5,
         ease: "backOut",
@@ -112,7 +196,7 @@ const EmployHero = () => {
     hover: {
       scale: 1.05,
       backgroundColor: "#1a365d",
-      boxShadow: "0 10px 25px rgba(221, 5, 37, 0.3)",
+      boxShadow: "0 15px 30px rgba(221, 5, 37, 0.4)",
       transition: {
         duration: 0.3,
         ease: "easeInOut",
@@ -128,7 +212,7 @@ const EmployHero = () => {
 
   const textGlow = {
     hover: {
-      textShadow: "0 0 8px rgba(255, 255, 255, 0.5)",
+      textShadow: "0 0 12px rgba(255, 255, 255, 0.6)",
       transition: {
         duration: 0.3,
         ease: "easeInOut",
@@ -154,6 +238,7 @@ const EmployHero = () => {
       animate="animate"
       transition={{ duration: 8, repeat: Infinity }}
     >
+      {/* Background animations */}
       <motion.div
         className="absolute top-20 left-20 w-24 h-24 bg-primary/10 rounded-full blur-xl"
         animate={{
@@ -204,21 +289,20 @@ const EmployHero = () => {
           </motion.h1>
         </motion.div>
 
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12"
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+          {/* Left Card - Enhanced animation coming from left */}
           <motion.div
-            variants={cardVariants}
+            ref={leftCardRef}
+            variants={leftCardVariants}
+            initial="hidden"
+            animate={leftCardInView ? "visible" : "hidden"}
             whileHover="hover"
             className="cursor-pointer"
           >
             <div className="bg-white p-5 rounded-4xl shadow-lg h-full flex flex-col">
               <motion.div
                 className="overflow-hidden rounded-4xl"
-                variants={imageVariants}
+                variants={leftImageVariants}
                 whileHover="hover"
               >
                 <img
@@ -250,11 +334,7 @@ const EmployHero = () => {
                 </motion.p>
               </div>
 
-              <motion.div
-                variants={buttonVariants}
-                // whileHover="hover"
-                whileTap="tap"
-              >
+              <motion.div variants={buttonVariants} whileTap="tap">
                 <Link to="/about">
                   <button className="text-[20px] rounded-4xl cursor-pointer font-bold font-sans text-white bg-primary px-10 py-3 w-full hover:bg-secondary hover:scale-105 duration-300 relative overflow-hidden">
                     <motion.div
@@ -274,16 +354,19 @@ const EmployHero = () => {
             </div>
           </motion.div>
 
+          {/* Right Card - Enhanced animation coming from right */}
           <motion.div
-            variants={cardVariants}
+            ref={rightCardRef}
+            variants={rightCardVariants}
+            initial="hidden"
+            animate={rightCardInView ? "visible" : "hidden"}
             whileHover="hover"
-            transition={{ delay: 0.1 }}
             className="cursor-pointer"
           >
             <div className="bg-white p-5 rounded-4xl shadow-lg h-full flex flex-col">
               <motion.div
                 className="overflow-hidden rounded-4xl"
-                variants={imageVariants}
+                variants={rightImageVariants}
                 whileHover="hover"
               >
                 <img
@@ -317,7 +400,6 @@ const EmployHero = () => {
 
               <motion.div
                 variants={buttonVariants}
-                // whileHover="hover"
                 whileTap="tap"
                 transition={{ delay: 0.2 }}
               >
@@ -339,7 +421,7 @@ const EmployHero = () => {
               </motion.div>
             </div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </motion.section>
   );

@@ -6,7 +6,7 @@
     "about": "About Us",
     "contact": "Contact Us",
     "language": "Language",
-    "career":"Careers"
+    "career": "Careers"
   },
   "homepage": {
     "hero": {
@@ -112,7 +112,11 @@
       "successHeading": "Why Headhunting Matters for Your Success",
       "successPara1": "In today’s competitive labour market, attracting and retaining top performers is vital. Many of the most talented professionals are not actively seeking new roles. Through our headhunting services,",
       "successPara2": "Cloud Konektion",
-      "successPara3": "enables you to reach beyond traditional channels and connect directly with this exceptional talent pool."
+      "successPara3": "enables you to reach beyond traditional channels and connect directly with this exceptional talent pool.",
+      "successpart": "Success Guaranteed",
+      "successtats1": "Success Rate",
+      "successtats2": "Support",
+      "successtats3": "Clients"
     },
     "advantage": {
       "advantageTopHeading": "Advantages of Cloud Konektion Headhunting",
@@ -125,7 +129,10 @@
     },
     "professional": {
       "professionalHeading": "By leveraging our expertise and extensive network of professionals, you can streamline your recruitment process, secure top talent, and achieve sustainable long-term success .Together, we will find your unicorn.",
-      "professionalButton": "I want the best people."
+      "professionalButton": "I want the best people.",
+      "stats1": "Expert",
+      "stats2": "Quality",
+      "stats3": "Trusted"
     },
     "workRecuit": {
       "workRecuitTopHeading": "Recruiting",

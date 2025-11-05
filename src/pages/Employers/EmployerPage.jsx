@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 const EmployerPage = () => {
   const { t } = useTranslation();
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-hidden">
       <EmployHero />
       <Headhunting />
       <Success />

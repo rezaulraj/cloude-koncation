@@ -6,7 +6,7 @@
     "about": "Despre noi",
     "contact": "Contact",
     "language": "Limba",
-    "career":"Careers"
+    "career": "Careers"
   },
   "homepage": {
     "hero": {
@@ -112,7 +112,11 @@
       "successHeading": "De ce Head-hunting-ul contează pentru succesul dvs.",
       "successPara1": "Pe piața competitivă a muncii de astăzi, atragerea și păstrarea celor mai buni performeri este vitală. Mulți dintre cei mai talentați profesioniști nu caută activ noi roluri. Prin serviciile noastre de head-hunting,",
       "successPara2": "Cloud Konektion",
-      "successPara3": "vă permite să depășiți canalele tradiționale și să vă conectați direct cu acest grup excepțional de talente."
+      "successPara3": "vă permite să depășiți canalele tradiționale și să vă conectați direct cu acest grup excepțional de talente.",
+      "successpart": "Succes garantat",
+      "successtats1": "Rată de succes",
+      "successtats2": "Suport",
+      "successtats3": "Clienți"
     },
     "advantage": {
       "advantageTopHeading": "Avantajele Head-hunting-ului Cloud Konektion",
@@ -125,7 +129,10 @@
     },
     "professional": {
       "professionalHeading": "Prin valorificarea expertizei și rețelei noastre extinse de profesioniști, puteți eficientiza procesul de recrutare, asigura talente de top și obține succes sustenabil pe termen lung. Împreună, vom găsi unicornul dvs.",
-      "professionalButton": "Vreau cei mai buni oameni."
+      "professionalButton": "Vreau cei mai buni oameni.",
+      "stats1": "Expert",
+      "stats2": "Calitate",
+      "stats3": "De încredere"
     },
     "workRecuit": {
       "workRecuitTopHeading": "Recrutare",

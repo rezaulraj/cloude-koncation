@@ -9,7 +9,6 @@ const WorkRecrui = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.3 });
 
-  // Animation variants - Left/right only, no top/bottom movement
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -21,11 +20,10 @@ const WorkRecrui = () => {
     },
   };
 
-  // Left side content - Comes from left only
   const contentVariants = {
     hidden: {
       opacity: 0,
-      x: -50, // Small movement from left
+      x: -50,
     },
     visible: {
       opacity: 1,
@@ -37,11 +35,10 @@ const WorkRecrui = () => {
     },
   };
 
-  // Right side content - Comes from right only
   const imageVariants = {
     hidden: {
       opacity: 0,
-      x: 50, // Small movement from right
+      x: 50,
     },
     visible: {
       opacity: 1,
@@ -137,7 +134,6 @@ const WorkRecrui = () => {
 
   return (
     <section className="py-20 bg-[#F4F4F2] relative" ref={ref}>
-      {/* Static background elements */}
       <div className="absolute top-20 left-20 w-16 h-16 bg-primary/10 rounded-full blur-lg" />
       <div className="absolute bottom-20 right-20 w-12 h-12 bg-secondary/10 rounded-full blur-lg" />
 
@@ -148,7 +144,6 @@ const WorkRecrui = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          {/* Content Section - Comes from LEFT only */}
           <motion.div
             className="flex flex-col justify-center items-start"
             variants={contentVariants}
@@ -179,12 +174,10 @@ const WorkRecrui = () => {
             </motion.p>
           </motion.div>
 
-          {/* Image Section - Comes from RIGHT only */}
           <motion.div
             className="flex justify-center items-center relative"
             variants={imageVariants}
           >
-            {/* Rotating Round Background - Only rotation */}
             <motion.div
               className="absolute flex justify-center items-center"
               style={{ width: "500px", height: "500px" }}
@@ -200,7 +193,6 @@ const WorkRecrui = () => {
               />
             </motion.div>
 
-            {/* Main Image Container - No movement */}
             <motion.div
               className="relative z-10"
               style={{ width: "320px", height: "320px" }}
@@ -217,7 +209,6 @@ const WorkRecrui = () => {
                 />
               </div>
 
-              {/* Decorative elements - Scale pulse only */}
               <motion.div
                 className="absolute -top-4 -right-4 w-8 h-8 bg-primary/30 rounded-full"
                 variants={scalePulse}
@@ -231,7 +222,6 @@ const WorkRecrui = () => {
               />
             </motion.div>
 
-            {/* Outer static ring */}
             <div
               className="absolute border border-primary/20 rounded-4xl"
               style={{ width: "384px", height: "384px" }}
@@ -239,7 +229,6 @@ const WorkRecrui = () => {
           </motion.div>
         </motion.div>
 
-        {/* Bottom decorative line - Scale only */}
         <motion.div
           className="w-48 h-1 bg-gradient-to-r from-transparent via-primary to-transparent rounded-full mx-auto mt-16"
           initial={{ scaleX: 0, opacity: 0 }}

@@ -6,7 +6,7 @@
     "about": "Rreth Nesh",
     "contact": "Na Kontaktoni",
     "language": "Gjuha",
-    "career":"Careers"
+    "career": "Careers"
   },
   "homepage": {
     "hero": {
@@ -112,7 +112,11 @@
       "successHeading": "Pse Headhunting është i rëndësishëm për suksesin tuaj",
       "successPara1": "Në tregun konkurrues të punës së sotme, tërheqja dhe mbajtja e performuesve më të mirë është jetike. Shumë nga profesionistët më të talentuar nuk janë aktivisht në kërkim të roleve të reja. Përmes shërbimeve tona të headhunting,",
       "successPara2": "Cloud Konektion",
-      "successPara3": "ju mundëson të arrini përtej kanaleve tradicionale dhe të lidheni drejtpërdrejt me këtë grup të jashtëzakonshëm talenti."
+      "successPara3": "ju mundëson të arrini përtej kanaleve tradicionale dhe të lidheni drejtpërdrejt me këtë grup të jashtëzakonshëm talenti.",
+      "successpart": "Sukses i garantuar",
+      "successtats1": "Shkalla e suksesit",
+      "successtats2": "Mbështetje",
+      "successtats3": "Klientë"
     },
     "advantage": {
       "advantageTopHeading": "Avantazhet e Headhunting nga Cloud Konektion",
@@ -125,7 +129,10 @@
     },
     "professional": {
       "professionalHeading": "Duke shfrytëzuar ekspertizën tonë dhe rrjetin e gjerë të profesionistëve, ju mund të përshpejtoni procesin e rekrutimit, të siguroni talent të nivelit të lartë dhe të arrini sukses të qëndrueshëm afatgjatë. Së bashku, do të gjejmë 'unicorn'-in tuaj.",
-      "professionalButton": "Dua njerëzit më të mirë."
+      "professionalButton": "Dua njerëzit më të mirë.",
+      "stats1": "Ekspert",
+      "stats2": "Cilësi",
+      "stats3": "I besuar"
     },
     "workRecuit": {
       "workRecuitTopHeading": "Rekrutimi",

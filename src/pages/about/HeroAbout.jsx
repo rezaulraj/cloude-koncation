@@ -133,7 +133,7 @@ const HeroAbout = () => {
   };
 
   return (
-    <section className="py-30 bg-[#F4F4F2] relative" ref={ref}>
+    <section className="py-45 bg-[#F4F4F2] relative" ref={ref}>
       <div className="absolute top-20 left-20 w-16 h-16 bg-primary/10 rounded-full blur-lg" />
       <div className="absolute bottom-20 right-20 w-12 h-12 bg-secondary/10 rounded-full blur-lg" />
 
