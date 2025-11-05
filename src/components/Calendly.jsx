@@ -18,7 +18,7 @@ const Calendly = ({ show, onClose }) => {
       script.onload = () => {
         if (window.Calendly) {
           window.Calendly.initInlineWidget({
-            url: "https://calendly.com/group1971-rec-meetting/30min",
+            url: "https://calendly.com/cloud-conektion-qwikhr/30min",
             parentElement: document.querySelector(".calendly-inline-widget"),
             prefill: {},
             utm: {},
