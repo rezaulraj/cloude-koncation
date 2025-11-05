@@ -151,7 +151,7 @@ const WhatValues = () => {
   };
 
   return (
-    <section className="py-10 bg-[#F4F4F2] relative overflow-hidden" ref={ref}>
+    <section className="pb-10 bg-[#F4F4F2] relative overflow-hidden" ref={ref}>
       <motion.div
         className="absolute top-20 left-20 w-16 h-16 bg-primary/10 rounded-full blur-lg"
         variants={pulseAnimation}
@@ -166,7 +166,7 @@ const WhatValues = () => {
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         <motion.h2
-          className="lg:text-[48px] md:text-3xl font-bold text-center mb-12 text-secondary font-sans"
+          className="lg:text-2xl md:text-3xl font-bold text-center mb-12 text-secondary font-sans"
           variants={titleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
