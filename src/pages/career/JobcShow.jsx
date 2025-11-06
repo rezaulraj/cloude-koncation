@@ -258,7 +258,7 @@ const JobShow = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Available <span className="text-blue-600">Jobs</span>
+            Available <span className="text-blue-500">Jobs</span>
           </h1>
         </motion.div>
 
@@ -286,11 +286,11 @@ const JobShow = () => {
                           </span>
                         )}
                         {job.featured && (
-                          <span className="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                          <span className="bg-[#12819C] text-white text-xs font-bold px-3 py-1 rounded-full">
                             FEATURED
                           </span>
                         )}
-                        <span className="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full">
+                        <span className="bg-[#12819C]/10 text-[#12819C] text-xs font-bold px-3 py-1 rounded-full">
                           {job.jobCategory?.replace(/_/g, " ")}
                         </span>
                       </div>
@@ -358,7 +358,7 @@ const JobShow = () => {
                           {job.requirements.slice(0, 3).map((req, idx) => (
                             <span
                               key={idx}
-                              className="bg-blue-50 text-blue-600 text-xs px-2 py-1 rounded"
+                              className="bg-[#12819C]/10 text-[#12819C] text-sm px-2 py-1 rounded"
                             >
                               {req}
                             </span>
