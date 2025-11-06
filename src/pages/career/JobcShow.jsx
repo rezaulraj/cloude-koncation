@@ -303,16 +303,16 @@ const JobShow = () => {
                       {job.title}
                     </h3>
                     <div className="flex items-center text-gray-600 mb-1">
-                      <FaMapMarkerAlt className="w-4 h-4 mr-2" />
+                      <FaMapMarkerAlt className="w-4 h-4 mr-2 text-[#12819C]" />
                       <span className="text-sm">{job.location}</span>
                     </div>
                     <div className="flex items-center text-gray-600">
-                      <FaIndustry className="w-4 h-4 mr-2" />
+                      <FaIndustry className="w-4 h-4 mr-2 text-[#12819C]" />
                       <span className="text-sm">{job.department}</span>
                     </div>
                     {job.gender && job.gender !== "Any" && (
                       <div className="flex items-center text-gray-600 mt-1">
-                        <FaVenusMars className="w-4 h-4 mr-2" />
+                        <FaVenusMars className="w-4 h-4 mr-2 text-[#12819C]" />
                         <span className="text-sm">Gender: {job.gender}</span>
                       </div>
                     )}
@@ -545,7 +545,7 @@ const JobShow = () => {
                 </div>
                 <button
                   onClick={() => setShowApplyPopup(false)}
-                  className="text-gray-400 hover:text-gray-600 transition-colors"
+                  className="text-gray-400 hover:text-[#12819C] transition-colors cursor-pointer"
                 >
                   <FaTimes className="w-6 h-6" />
                 </button>
@@ -711,7 +711,7 @@ const JobShow = () => {
                   <motion.button
                     type="button"
                     onClick={() => setShowApplyPopup(false)}
-                    className="flex-1 px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200"
+                    className="flex-1 px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200 cursor-pointer"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -719,7 +719,7 @@ const JobShow = () => {
                   </motion.button>
                   <motion.button
                     type="submit"
-                    className="flex-1 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all duration-200 flex items-center justify-center gap-2"
+                    className="flex-1 px-6 py-3 bg-[#12819C]/90 text-white rounded-lg font-semibold hover:bg-[#12819C] transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
