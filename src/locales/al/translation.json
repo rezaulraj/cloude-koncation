@@ -208,6 +208,13 @@
     "careerhero1": "Hands-On",
     "careerhero2": "Punë"
   },
+  "successstory": {
+    "headingsuccess": "Histori suksesi për viza",
+    "paragraph": "Njerëz të vërtetë, ëndrra të vërteta, histori të vërteta suksesi. Bashkohuni me mijëra të tjerë që kanë ndryshuar jetën e tyre përmes shërbimeve tona të vizave.",
+    "btn": "Fillo historinë tënde të suksesit",
+    "subheading1": "Histori",
+    "subheading2": "Suksesi"
+  },
   "footer": {
     "footerFront": "Cloud Konektion",
     "footerPara": "Ne gjejmë talente të jashtëzakonshme për kompaninë tuaj",

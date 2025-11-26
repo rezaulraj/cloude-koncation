@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import success1 from "/images/visasuccess.jpeg";
 import success2 from "/images/visasuccess2.jpeg";
 import success3 from "/images/visasuccess.jpeg";
+import success4 from "/images/visasuccess2.jpeg";
 import roundImage from "/images/round.png";
 
 const HeroVisaSuccess = () => {
@@ -17,6 +18,9 @@ const HeroVisaSuccess = () => {
     {
       image: success3,
     },
+    {
+      image: success4,
+    },
   ];
 
   useEffect(() => {
@@ -28,8 +32,8 @@ const HeroVisaSuccess = () => {
   }, [images.length]);
 
   return (
-    <div className="min-h-screen bg-[#192C33] flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div className="py-28 bg-[#192C33] flex items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div>
@@ -43,7 +47,7 @@ const HeroVisaSuccess = () => {
             </div>
 
             <a
-              href="careers"
+              href="/careers"
               className="bg-[#46C0DC] hover:bg-[#3aa8c4] text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
             >
               Start Your Success Story
@@ -79,7 +83,7 @@ const HeroVisaSuccess = () => {
                 ))}
               </div>
 
-              <div className="absolute inset-0 bg-gradient-to-br from-[#192C33]/20 to-[#46C0DC]/10 rounded-2xl"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-[#192C33]/20 to-[#46C0DC]/10 rounded-2xl"></div>
 
               <div className="absolute top-4 right-4 w-8 h-8 bg-[#46C0DC] rounded-full animate-pulse"></div>
               <div className="absolute bottom-4 left-4 w-6 h-6 bg-[#46C0DC] rounded-full animate-bounce"></div>
@@ -88,7 +92,7 @@ const HeroVisaSuccess = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style jsx="true">{`
         @keyframes continuous-zoom {
           0% {
             transform: scale(1);

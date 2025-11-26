@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { MdMail } from "react-icons/md";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -54,7 +55,7 @@ const Footer = () => {
     },
     hover: {
       scale: 1.2,
-      backgroundColor: "#ffffff",
+      backgroundColor: "#46C0DC",
       color: "#0f2529",
       rotate: 360,
       transition: {
@@ -208,7 +209,7 @@ const Footer = () => {
           </motion.h3>
 
           <motion.p className="flex items-center gap-2" variants={itemVariants}>
-            📧{" "}
+            <MdMail/>
             <Link
               to="mailto:help@cloudkonektion.eu"
               className="hover:underline"
