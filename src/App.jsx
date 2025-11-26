@@ -6,6 +6,7 @@ import EmployerPage from "./pages/Employers/EmployerPage";
 import ApplicantPage from "./pages/Applicant/ApplicantPage";
 import { useEffect } from "react";
 import Career from "./pages/career/Career";
+import SuccessStory from "./pages/successstory/SuccessStory";
 function App() {
   const location = useLocation();
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
           <Route path="" element={<HomePage />} />
           <Route path="about" element={<About />} />
           <Route path="employers" element={<EmployerPage />} />
+          <Route path="success-story" element={<SuccessStory />} />
           <Route path="applicants" element={<ApplicantPage />} />
           <Route path="careers" element={<Career />} />
         </Route>

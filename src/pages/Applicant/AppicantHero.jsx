@@ -139,7 +139,6 @@ const AppicantHero = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-        
           <motion.div
             variants={cardVariants}
             whileHover="hover"
