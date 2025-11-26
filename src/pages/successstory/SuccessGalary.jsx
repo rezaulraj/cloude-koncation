@@ -7,11 +7,12 @@ import success5 from "/images/visasuccess.jpeg";
 import success6 from "/images/visasuccess2.jpeg";
 import success7 from "/images/visasuccess.jpeg";
 import success8 from "/images/visasuccess2.jpeg";
+import { useTranslation } from "react-i18next";
 
 const SuccessGallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const { t } = useTranslation();
   const successStories = [
     {
       id: 1,
@@ -103,7 +104,10 @@ const SuccessGallery = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-          Success <span className="text-[#46C0DC]">Stories</span>
+          {t("successstory.subheading1")}{" "}
+          <span className="text-[#46C0DC]">
+            {t("successstory.subheading2")}
+          </span>
         </h1>
       </div>
       <div className="container mx-auto">

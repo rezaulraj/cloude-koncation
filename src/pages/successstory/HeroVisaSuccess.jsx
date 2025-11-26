@@ -4,8 +4,10 @@ import success2 from "/images/visasuccess2.jpeg";
 import success3 from "/images/visasuccess.jpeg";
 import success4 from "/images/visasuccess2.jpeg";
 import roundImage from "/images/round.png";
+import { useTranslation } from "react-i18next";
 
 const HeroVisaSuccess = () => {
+  const { t } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
@@ -38,11 +40,10 @@ const HeroVisaSuccess = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-5xl lg:text-7xl font-bold text-[#46C0DC] leading-tight">
-                Visa Success Stories
+                {t("successstory.headingsuccess")}
               </h2>
               <p className="text-xl text-white/90 mt-6 leading-relaxed">
-                Real people, real dreams, real success stories. Join thousands
-                who have transformed their lives through our visa services.
+                {t("successstory.paragraph")}
               </p>
             </div>
 
@@ -50,7 +51,7 @@ const HeroVisaSuccess = () => {
               href="/careers"
               className="bg-[#46C0DC] hover:bg-[#3aa8c4] text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
             >
-              Start Your Success Story
+              {t("successstory.btn")}
             </a>
           </div>
 

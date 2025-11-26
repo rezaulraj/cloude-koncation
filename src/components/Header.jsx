@@ -104,7 +104,7 @@ const Header = () => {
     { href: "/", label: t("nav.home") },
     { href: "/employers", label: t("nav.employers") },
     { href: "/applicants", label: t("nav.applicants") },
-    { href: "/success-story", label: "Success Story" },
+    { href: "/success-story", label: t("nav.success") },
     { href: "/about", label: t("nav.about") },
     { href: "/careers", label: t("nav.career") },
   ];
