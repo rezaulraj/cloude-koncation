@@ -205,7 +205,7 @@ const HeroVisaSuccess = () => {
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentImageIndex}
-                    className="relative w-full h-full overflow-hidden rounded-2xl shadow-2xl"
+                    className="relative w-full h-auto overflow-hidden rounded-2xl shadow-2xl"
                     initial={{
                       opacity: 0,
                       scale: 0.9,
@@ -230,7 +230,7 @@ const HeroVisaSuccess = () => {
                     <motion.img
                       src={images[currentImageIndex].image}
                       alt="Visa Success Celebration"
-                      className="w-full h-full object-center"
+                      className="w-full h-auto object-center"
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.5 }}
                     />
