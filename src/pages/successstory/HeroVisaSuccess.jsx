@@ -3,9 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import success1 from "/images/success1.jpg";
 import success2 from "/images/success2.jpg";
 import success3 from "/images/success3.jpg";
-import roundImage from "/images/round.png";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 const HeroVisaSuccess = () => {
   const { t } = useTranslation();
@@ -30,7 +28,6 @@ const HeroVisaSuccess = () => {
     },
   ];
 
-  // Trigger celebration on image change
   useEffect(() => {
     setShowCelebration(true);
     const timer = setTimeout(() => setShowCelebration(false), 2000);
@@ -45,7 +42,7 @@ const HeroVisaSuccess = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  // Confetti particles
+
   const confettiParticles = Array.from({ length: 50 }, (_, i) => ({
     id: i,
     color: ["#46C0DC", "#FF6B6B", "#4ECDC4", "#FFD166", "#6A0572"][
@@ -58,12 +55,10 @@ const HeroVisaSuccess = () => {
     rotation: Math.random() * 360,
   }));
 
-  // Floating emojis for celebration
   const celebrationEmojis = ["🎉", "🎊", "✨", "🌟", "🥳", "🎈", "🏆", "✅"];
 
   return (
     <div className="py-28 bg-[#192C33] flex items-center overflow-hidden relative">
-      {/* Celebration Confetti */}
       <AnimatePresence>
         {showCelebration && (
           <div className="absolute inset-0 pointer-events-none z-50">
@@ -95,7 +90,6 @@ const HeroVisaSuccess = () => {
               />
             ))}
 
-            {/* Floating Emojis */}
             {celebrationEmojis.map((emoji, index) => (
               <motion.div
                 key={index}
@@ -127,7 +121,6 @@ const HeroVisaSuccess = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
           <motion.div
             className="space-y-8"
             initial={{ opacity: 0, x: -50 }}
@@ -176,17 +169,14 @@ const HeroVisaSuccess = () => {
             </motion.a>
           </motion.div>
 
-          {/* Right Image Section - Full Image Display */}
           <div className="relative">
-            <div className="relative h-[600px] rounded-2xl overflow-hidden">
-              {/* Animated Background */}
+            <div className="relative h-[600px] rounded-2xl ">
               <motion.div
                 className="absolute inset-0"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
               >
-                {/* Rotating Geometric Pattern */}
                 <motion.div
                   className="absolute inset-0 flex items-center justify-center"
                   animate={{ rotate: 360 }}
@@ -200,12 +190,11 @@ const HeroVisaSuccess = () => {
                 </motion.div>
               </motion.div>
 
-              {/* Full Image Display with Celebration */}
               <div className="absolute inset-0 flex items-center justify-center p-4">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentImageIndex}
-                    className="relative w-full h-auto overflow-hidden rounded-2xl shadow-2xl"
+                    className="relative w-full h-96 md:h-[450px] overflow-hidden rounded-2xl shadow-2xl"
                     initial={{
                       opacity: 0,
                       scale: 0.9,
@@ -226,19 +215,16 @@ const HeroVisaSuccess = () => {
                       ease: "easeInOut",
                     }}
                   >
-                    {/* Main Full Image */}
                     <motion.img
                       src={images[currentImageIndex].image}
                       alt="Visa Success Celebration"
-                      className="w-full h-auto object-center"
+                      className="w-full h-auto md:h-[450px] object-cover"
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.5 }}
                     />
 
-                    {/* Image Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-                    {/* Celebration Title */}
                     <motion.div
                       className="absolute bottom-8 left-8 right-8"
                       initial={{ opacity: 0, y: 50 }}
@@ -263,7 +249,6 @@ const HeroVisaSuccess = () => {
                       </motion.h3>
                     </motion.div>
 
-                    {/* Success Badge */}
                     <motion.div
                       className="absolute top-6 right-6 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg"
                       initial={{ scale: 0, rotate: -180 }}
@@ -284,7 +269,6 @@ const HeroVisaSuccess = () => {
                       </motion.div>
                     </motion.div>
 
-                    {/* Animated Border Glow */}
                     <motion.div
                       className="absolute inset-0 rounded-2xl border-4 pointer-events-none"
                       style={{ borderColor: images[currentImageIndex].color }}
@@ -311,9 +295,8 @@ const HeroVisaSuccess = () => {
                 </AnimatePresence>
               </div>
 
-              {/* Floating Celebration Elements */}
               <motion.div
-                className="absolute top-4 left-4 text-4xl"
+                className="absolute top-12 left-4 text-4xl"
                 animate={{
                   scale: [1, 1.3, 1],
                   rotate: [0, 15, -15, 0],
@@ -343,7 +326,6 @@ const HeroVisaSuccess = () => {
               </motion.div>
             </div>
 
-            {/* Image Navigation Dots */}
             <div className="flex justify-center mt-6 space-x-3">
               {images.map((_, index) => (
                 <button
@@ -358,7 +340,6 @@ const HeroVisaSuccess = () => {
               ))}
             </div>
 
-            {/* Background Orb */}
             <motion.div
               className="absolute -z-10 -right-20 -top-20 w-80 h-80 bg-gradient-to-r from-[#46C0DC] to-[#4ECDC4] rounded-full blur-3xl opacity-20"
               animate={{
@@ -374,7 +355,6 @@ const HeroVisaSuccess = () => {
           </div>
         </div>
 
-        {/* Stats Celebration Bar */}
         <motion.div
           className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16"
           initial={{ opacity: 0, y: 50 }}

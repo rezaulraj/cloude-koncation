@@ -15,6 +15,7 @@ const SuccessGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hoveredCard, setHoveredCard] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [showCelebration, setShowCelebration] = useState(false);
   const { t } = useTranslation();
 
   const successStories = [
@@ -59,7 +60,7 @@ const SuccessGallery = () => {
       id: 5,
       image: success5,
       title: "Germany Work Visa",
-      description: "Tech professional visa for Berlin",
+      description: "Skilled worker visa for Berlin",
       country: "🇩🇪 Germany",
       duration: "4 weeks",
       category: "Work",
@@ -68,7 +69,7 @@ const SuccessGallery = () => {
       id: 6,
       image: success6,
       title: "Japan Work Visa",
-      description: "Student visa for Tokyo University",
+      description: "Skilled worker visa for Japan Tokyo",
       country: "🇯🇵 Japan",
       duration: "3 weeks",
       category: "Student",
@@ -93,7 +94,6 @@ const SuccessGallery = () => {
     },
   ];
 
-  // 3D floating animation variants
   const floatingAnimation = {
     initial: { y: 0, rotateY: 0 },
     hover: {
@@ -107,7 +107,6 @@ const SuccessGallery = () => {
     },
   };
 
-  // Holographic effect variants
   const hologramEffect = {
     initial: { backgroundPosition: "0% 0%" },
     hover: {
@@ -116,7 +115,6 @@ const SuccessGallery = () => {
     },
   };
 
-  // Particle system for background
   const BackgroundParticles = () => {
     const particles = Array.from({ length: 20 }, (_, i) => ({
       id: i,
@@ -156,34 +154,97 @@ const SuccessGallery = () => {
     );
   };
 
-  // Celebration effect for modal
-  const CelebrationEffect = () => (
-    <div className="absolute inset-0 pointer-events-none">
-      {Array.from({ length: 15 }, (_, i) => (
-        <motion.div
-          key={i}
-          className="absolute text-2xl"
-          style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-          }}
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{
-            scale: [0, 1, 0],
-            opacity: [0, 1, 0],
-            rotate: [0, 180, 360],
-          }}
-          transition={{
-            duration: 2,
-            delay: i * 0.1,
-            repeat: Infinity,
-          }}
-        >
-          {["✨", "🌟", "⭐", "🎉", "💫"][i % 5]}
-        </motion.div>
-      ))}
-    </div>
-  );
+  const CelebrationEffect = () => {
+    const confettiParticles = Array.from({ length: 60 }, (_, i) => ({
+      id: i,
+      color: [
+        "#46C0DC",
+        "#FF6B6B",
+        "#4ECDC4",
+        "#FFD166",
+        "#6A0572",
+        "#A78BFA",
+        "#34D399",
+      ][Math.floor(Math.random() * 7)],
+      size: Math.random() * 12 + 4,
+      delay: Math.random() * 0.5,
+      duration: Math.random() * 2 + 1,
+      x: Math.random() * 100,
+      rotation: Math.random() * 360,
+    }));
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-50 overflow-hidden">
+        {confettiParticles.map((particle) => (
+          <motion.div
+            key={particle.id}
+            className="absolute rounded-sm"
+            style={{
+              width: particle.size,
+              height: particle.size / 2,
+              backgroundColor: particle.color,
+              left: `${particle.x}%`,
+              top: "-10%",
+              rotate: particle.rotation,
+            }}
+            initial={{ y: -100, opacity: 0, rotate: 0 }}
+            animate={{
+              y: "110vh",
+              opacity: [0, 1, 0.8, 0],
+              rotate: particle.rotation + 360,
+              x: `${Math.random() * 100 - 50}%`,
+            }}
+            transition={{
+              duration: particle.duration,
+              delay: particle.delay,
+              ease: "easeOut",
+            }}
+          />
+        ))}
+
+        {Array.from({ length: 12 }, (_, i) => (
+          <motion.div
+            key={`emoji-${i}`}
+            className="absolute text-3xl"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: "-10%",
+            }}
+            initial={{ y: -50, opacity: 0, scale: 0 }}
+            animate={{
+              y: "120vh",
+              opacity: [0, 1, 0.8, 0],
+              scale: [0, 1.2, 1, 0.8],
+              rotate: [0, 180, 360],
+              x: `${Math.random() * 40 - 20}%`,
+            }}
+            transition={{
+              duration: 2,
+              delay: i * 0.1,
+              ease: "easeOut",
+            }}
+          >
+            {
+              [
+                "🎉",
+                "🎊",
+                "✨",
+                "🌟",
+                "⭐",
+                "🥳",
+                "🎈",
+                "🏆",
+                "✅",
+                "💫",
+                "🔥",
+                "💎",
+              ][i]
+            }
+          </motion.div>
+        ))}
+      </div>
+    );
+  };
 
   const openImage = (image, index) => {
     setSelectedImage(image);
@@ -192,12 +253,14 @@ const SuccessGallery = () => {
 
   const closeImage = () => {
     setSelectedImage(null);
+    setShowCelebration(false);
   };
 
   const goToNext = () => {
     const nextIndex = (currentIndex + 1) % successStories.length;
     setCurrentIndex(nextIndex);
     setSelectedImage(successStories[nextIndex]);
+    triggerCelebration();
   };
 
   const goToPrev = () => {
@@ -205,6 +268,12 @@ const SuccessGallery = () => {
       (currentIndex - 1 + successStories.length) % successStories.length;
     setCurrentIndex(prevIndex);
     setSelectedImage(successStories[prevIndex]);
+    triggerCelebration();
+  };
+
+  const triggerCelebration = () => {
+    setShowCelebration(true);
+    setTimeout(() => setShowCelebration(false), 1200);
   };
 
   useEffect(() => {
@@ -225,7 +294,6 @@ const SuccessGallery = () => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [selectedImage, currentIndex]);
 
-  // Staggered card animation
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -257,7 +325,6 @@ const SuccessGallery = () => {
     <div className="min-h-screen bg-linear-to-br from-gray-700 via-gray-800 to-gray-900 py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <BackgroundParticles />
 
-      {/* Animated Background Orbs */}
       <motion.div
         className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"
         animate={{
@@ -334,7 +401,6 @@ const SuccessGallery = () => {
                   transition={{ duration: 0.7 }}
                 />
 
-                {/* Animated Overlay */}
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
                   initial={{ opacity: 0.6 }}
@@ -342,7 +408,6 @@ const SuccessGallery = () => {
                   transition={{ duration: 0.3 }}
                 />
 
-                {/* Floating Elements */}
                 <motion.div
                   className="absolute top-4 right-4"
                   initial={{ scale: 0, rotate: -180 }}
@@ -359,8 +424,6 @@ const SuccessGallery = () => {
                     Approved
                   </span>
                 </motion.div>
-
-                {/* Country Flag Badge */}
                 <motion.div
                   className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-semibold"
                   initial={{ x: -50 }}
@@ -370,7 +433,6 @@ const SuccessGallery = () => {
                   {story.country}
                 </motion.div>
 
-                {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <motion.h3
                     className="text-xl font-bold mb-2"
@@ -400,7 +462,6 @@ const SuccessGallery = () => {
                   </motion.div>
                 </div>
 
-                {/* Interactive Hover Effect */}
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-[#46C0DC]/20 to-purple-500/20 opacity-0 group-hover:opacity-100 rounded-3xl"
                   initial={{ scale: 0.8 }}
@@ -409,7 +470,6 @@ const SuccessGallery = () => {
                 />
               </motion.div>
 
-              {/* Glowing Orb Effect */}
               {hoveredCard === story.id && (
                 <motion.div
                   className="absolute inset-0 bg-[#46C0DC] rounded-3xl blur-xl opacity-20"
@@ -423,46 +483,31 @@ const SuccessGallery = () => {
         </div>
       </motion.div>
 
-      {/* Enhanced Modal */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {selectedImage && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-lg"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            onClick={closeImage}
           >
-            <CelebrationEffect />
+            {showCelebration && <CelebrationEffect />}
 
             <motion.button
-              onClick={closeImage}
-              className="absolute top-6 right-6 z-10 text-white hover:text-[#46C0DC] transition-colors duration-200 bg-white/10 backdrop-blur-sm rounded-full p-3"
-              whileHover={{ scale: 1.1, rotate: 90 }}
+              onClick={(e) => {
+                e.stopPropagation();
+                goToPrev();
+              }}
+              className="absolute left-8 top-1/2 transform -translate-y-1/2 z-60 bg-white/20 hover:bg-white/30 text-white p-5 rounded-2xl transition-all duration-300 backdrop-blur-lg border border-white/20 shadow-2xl group"
+              whileHover={{ scale: 1.15, x: -5 }}
               whileTap={{ scale: 0.9 }}
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.2 }}
             >
               <svg
-                className="w-8 h-8"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </motion.button>
-
-            <motion.button
-              onClick={goToPrev}
-              className="absolute left-6 top-1/2 transform -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 text-white p-4 rounded-full transition-all duration-200 backdrop-blur-sm"
-              whileHover={{ scale: 1.1, x: -5 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <svg
-                className="w-6 h-6"
+                className="w-7 h-7 group-hover:text-[#46C0DC] transition-colors"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -477,13 +522,19 @@ const SuccessGallery = () => {
             </motion.button>
 
             <motion.button
-              onClick={goToNext}
-              className="absolute right-6 top-1/2 transform -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 text-white p-4 rounded-full transition-all duration-200 backdrop-blur-sm"
-              whileHover={{ scale: 1.1, x: 5 }}
+              onClick={(e) => {
+                e.stopPropagation();
+                goToNext();
+              }}
+              className="absolute right-8 top-1/2 transform -translate-y-1/2 z-60 bg-white/20 hover:bg-white/30 text-white p-5 rounded-2xl transition-all duration-300 backdrop-blur-lg border border-white/20 shadow-2xl group"
+              whileHover={{ scale: 1.15, x: 5 }}
               whileTap={{ scale: 0.9 }}
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.2 }}
             >
               <svg
-                className="w-6 h-6"
+                className="w-7 h-7 group-hover:text-[#46C0DC] transition-colors"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -497,86 +548,163 @@ const SuccessGallery = () => {
               </svg>
             </motion.button>
 
-            <motion.div
-              className="relative max-w-6xl max-h-[90vh] w-full mx-4"
-              initial={{ scale: 0.8, opacity: 0, rotateY: 180 }}
-              animate={{ scale: 1, opacity: 1, rotateY: 0 }}
-              exit={{ scale: 0.8, opacity: 0, rotateY: -180 }}
-              transition={{ type: "spring", damping: 25 }}
+            <motion.button
+              onClick={closeImage}
+              className="absolute top-8 right-8 z-60 text-white hover:text-[#46C0DC] transition-colors duration-300 bg-white/10 hover:bg-white/20 backdrop-blur-lg rounded-2xl p-4 border border-white/20 shadow-2xl group"
+              whileHover={{ scale: 1.1, rotate: 90 }}
+              whileTap={{ scale: 0.9 }}
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.1 }}
             >
-              <motion.img
-                src={selectedImage.image}
-                alt={selectedImage.title}
-                className="w-full h-full object-contain max-h-[70vh] rounded-2xl shadow-2xl"
-                initial={{ scale: 1.2 }}
-                animate={{ scale: 1 }}
-                transition={{ delay: 0.2, duration: 0.5 }}
-              />
-
-              <motion.div
-                className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 rounded-b-2xl"
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.3 }}
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                <div className="text-white">
-                  <motion.h3
-                    className="text-3xl font-bold mb-3"
-                    initial={{ x: -50, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.4 }}
-                  >
-                    {selectedImage.title}
-                  </motion.h3>
-                  <motion.p
-                    className="text-gray-200 text-lg mb-4"
-                    initial={{ x: -50, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                  >
-                    {selectedImage.description}
-                  </motion.p>
-                  <motion.div
-                    className="flex items-center justify-between"
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.6 }}
-                  >
-                    <div className="flex gap-4">
-                      <span className="bg-gradient-to-r from-green-500 to-[#46C0DC] text-white px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </motion.button>
+
+            <motion.div
+              className="relative w-full h-full flex items-center justify-center p-4"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentIndex}
+                  className="relative w-full h-full max-w-6xl max-h-[90vh] flex items-center justify-center rounded-2xl overflow-hidden bg-black"
+                  initial={{ scale: 0.9, opacity: 0, rotateY: 90 }}
+                  animate={{ scale: 1, opacity: 1, rotateY: 0 }}
+                  exit={{ scale: 1.1, opacity: 0, rotateY: -90 }}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                >
+                  <motion.img
+                    src={selectedImage.image}
+                    alt={selectedImage.title}
+                    className="w-full h-full object-cover"
+                    initial={{ scale: 1.1 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.8 }}
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent">
+                    <div className="absolute top-6 left-6 right-6 flex justify-between items-start">
+                      <motion.div
+                        className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-5 py-3 rounded-full text-base font-bold shadow-2xl flex items-center gap-2 backdrop-blur-sm"
+                        initial={{ scale: 0, y: -50 }}
+                        animate={{ scale: 1, y: 0 }}
+                        transition={{ delay: 0.4, type: "spring" }}
+                      >
                         <motion.span
-                          animate={{ scale: [1, 1.2, 1] }}
-                          transition={{ duration: 1, repeat: Infinity }}
+                          animate={{ rotate: [0, 360] }}
+                          transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "linear",
+                          }}
                         >
-                          🎉
+                          ✨
                         </motion.span>
-                        Visa Approved!
-                      </span>
-                      <span className="bg-white/20 backdrop-blur-sm text-white px-3 py-2 rounded-full text-sm">
+                        VISA APPROVED
+                      </motion.div>
+
+                      <motion.div
+                        className="bg-black/60 backdrop-blur-lg text-white px-4 py-3 rounded-2xl text-base font-semibold border border-white/20 shadow-2xl"
+                        initial={{ scale: 0, y: -50 }}
+                        animate={{ scale: 1, y: 0 }}
+                        transition={{ delay: 0.5, type: "spring" }}
+                      >
                         {selectedImage.country}
-                      </span>
+                      </motion.div>
                     </div>
-                    <span className="text-sm text-gray-300 bg-black/30 px-3 py-2 rounded-full">
+
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                      <motion.div
+                        className="max-w-4xl mx-auto"
+                        initial={{ y: 100, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ delay: 0.3 }}
+                      >
+                        <motion.h2
+                          className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent"
+                          initial={{ x: -50, opacity: 0 }}
+                          animate={{ x: 0, opacity: 1 }}
+                          transition={{ delay: 0.5 }}
+                        >
+                          {selectedImage.title}
+                        </motion.h2>
+
+                        <motion.p
+                          className="text-xl lg:text-2xl text-gray-200 mb-6 leading-relaxed"
+                          initial={{ x: -50, opacity: 0 }}
+                          animate={{ x: 0, opacity: 1 }}
+                          transition={{ delay: 0.6 }}
+                        >
+                          {selectedImage.description}
+                        </motion.p>
+
+                        <motion.div
+                          className="flex flex-wrap gap-3 mb-6"
+                          initial={{ y: 30, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          transition={{ delay: 0.7 }}
+                        >
+                          <span className="bg-blue-500/30 backdrop-blur-lg text-white px-4 py-2 rounded-xl text-base border border-white/20 flex items-center gap-2">
+                            ⏱️ {selectedImage.duration}
+                          </span>
+                          <span className="bg-purple-500/30 backdrop-blur-lg text-white px-4 py-2 rounded-xl text-base border border-white/20 flex items-center gap-2">
+                            📁 {selectedImage.category}
+                          </span>
+                        </motion.div>
+                      </motion.div>
+                    </div>
+                    <motion.div
+                      className="absolute bottom-6 right-6 bg-black/60 backdrop-blur-lg text-white px-4 py-2 rounded-xl text-base font-semibold border border-white/20 shadow-2xl"
+                      initial={{ scale: 0, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{ delay: 0.8 }}
+                    >
                       {currentIndex + 1} / {successStories.length}
-                    </span>
-                  </motion.div>
-                </div>
-              </motion.div>
+                    </motion.div>
+                  </div>
+                </motion.div>
+              </AnimatePresence>
             </motion.div>
 
             <motion.div
-              className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white/60 text-sm bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full"
-              initial={{ y: 50, opacity: 0 }}
+              className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white/80 text-sm bg-black/60 backdrop-blur-lg px-6 py-3 rounded-xl border border-white/20 shadow-2xl"
+              initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.7 }}
+              transition={{ delay: 0.9 }}
             >
-              Use ← → arrows to navigate • ESC to close • Click outside to exit
+              <div className="flex items-center gap-4">
+                <span className="flex items-center gap-1">
+                  <kbd className="px-2 py-1 bg-white/20 rounded text-xs">←</kbd>
+                  <span className="text-xs">Prev</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <kbd className="px-2 py-1 bg-white/20 rounded text-xs">→</kbd>
+                  <span className="text-xs">Next</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <kbd className="px-2 py-1 bg-white/20 rounded text-xs">
+                    ESC
+                  </kbd>
+                  <span className="text-xs">Close</span>
+                </span>
+              </div>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      {/* Floating Background Elements */}
       <motion.div
         className="fixed top-1/4 left-10 w-4 h-4 bg-[#46C0DC] rounded-full opacity-40"
         animate={{
