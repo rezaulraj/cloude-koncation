@@ -39,7 +39,7 @@ const NotFound = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 flex items-center justify-center px-4 relative overflow-hidden">
+    <div className=" pt-32 min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 flex items-center justify-center px-4 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <div
@@ -156,7 +156,6 @@ const NotFound = () => {
             <span>Go Back</span>
           </button>
         </div>
-
 
       </div>
 

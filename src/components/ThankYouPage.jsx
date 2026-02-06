@@ -16,7 +16,6 @@ const ThankYouPage = () => {
   const navigate = useNavigate();
   const [countdown, setCountdown] = useState(10);
 
-  // Auto-redirect after 10 seconds
   useEffect(() => {
     if (countdown > 0) {
       const timer = setTimeout(() => setCountdown(countdown - 1), 1000);
@@ -26,7 +25,6 @@ const ThankYouPage = () => {
     }
   }, [countdown, navigate]);
 
-  // Floating animation for particles
   const floatingParticles = Array.from({ length: 20 }).map((_, i) => ({
     id: i,
     size: Math.random() * 20 + 10,
@@ -38,7 +36,6 @@ const ThankYouPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
-      {/* Animated Background Particles */}
       <div className="absolute inset-0 overflow-hidden">
         {floatingParticles.map((particle) => (
           <motion.div
@@ -65,14 +62,12 @@ const ThankYouPage = () => {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-16">
-        {/* Main Content Container */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, type: "spring" }}
           className="text-center"
         >
-          {/* Success Icon with Animation */}
           <motion.div
             initial={{ rotateY: 0 }}
             animate={{ rotateY: 360 }}
@@ -85,7 +80,6 @@ const ThankYouPage = () => {
             </div>
           </motion.div>
 
-          {/* Confetti Animation */}
           <div className="mb-8">
             {[...Array(12)].map((_, i) => (
               <motion.div
@@ -105,7 +99,6 @@ const ThankYouPage = () => {
             ))}
           </div>
 
-          {/* Main Message */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -128,7 +121,6 @@ const ThankYouPage = () => {
             We'll review your profile and get back to you soon.
           </motion.p>
 
-          {/* Success Animation */}
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
@@ -136,7 +128,6 @@ const ThankYouPage = () => {
             className="h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mb-10 mx-auto max-w-md"
           />
 
-          {/* Countdown Timer */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -152,14 +143,12 @@ const ThankYouPage = () => {
             </div>
           </motion.div>
 
-          {/* Action Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2 }}
             className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto"
           >
-            {/* Home Button */}
             <motion.button
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
@@ -185,7 +174,6 @@ const ThankYouPage = () => {
               </motion.div>
             </motion.button>
 
-            {/* Browse Jobs Button */}
             <motion.button
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
@@ -215,7 +203,6 @@ const ThankYouPage = () => {
               </motion.div>
             </motion.button>
 
-            {/* Apply Again Button */}
             <motion.button
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
@@ -246,7 +233,6 @@ const ThankYouPage = () => {
             </motion.button>
           </motion.div>
 
-          {/* Additional Info */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -290,7 +276,6 @@ const ThankYouPage = () => {
             </ul>
           </motion.div>
 
-          {/* Decorative Elements */}
           <motion.div
             className="mt-16"
             initial={{ opacity: 0 }}
@@ -318,7 +303,6 @@ const ThankYouPage = () => {
         </motion.div>
       </div>
 
-      {/* Wave Animation at Bottom */}
       <div className="absolute bottom-0 left-0 right-0 overflow-hidden">
         <svg
           className="relative block w-full h-20"
