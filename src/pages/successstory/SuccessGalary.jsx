@@ -3,11 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import success1 from "/images/success1.jpg";
 import success2 from "/images/success2.jpg";
 import success3 from "/images/success3.jpg";
-import success4 from "/images/success1.jpg";
-import success5 from "/images/success2.jpg";
-import success6 from "/images/success3.jpg";
-import success7 from "/images/success1.jpg";
-import success8 from "/images/success2.jpg";
+// import success4 from "/images/success1.jpg";
+// import success5 from "/images/success2.jpg";
+// import success6 from "/images/success3.jpg";
+// import success7 from "/images/success1.jpg";
+// import success8 from "/images/success2.jpg";
 import { useTranslation } from "react-i18next";
 
 const SuccessGallery = () => {
@@ -22,76 +22,75 @@ const SuccessGallery = () => {
     {
       id: 1,
       image: success1,
-      title: "Work Visa",
-      description:
-        "John successfully got his student visa for Harvard University",
-      country: "🇺🇸 USA",
+      title: "Romania Work Visa",
+      description: "Rana Shrijana successfully got skilled worker visa",
+      country: "Romania",
       duration: "2 weeks",
-      category: "Student",
+      category: "Work",
     },
     {
       id: 2,
       image: success2,
-      title: "UK Work Visa",
-      description: "Sarah approved for UK skilled worker visa",
-      country: "🇬🇧 UK",
+      title: "Serbia Work Visa",
+      description: "Limbu Khusbu approved for Serbia skilled worker visa",
+      country: "Serbia",
       duration: "3 weeks",
       category: "Work",
     },
     {
       id: 3,
       image: success3,
-      title: "Canada PR",
-      description: "Mike and family received Canadian permanent residency",
-      country: "🇨🇦 Canada",
-      duration: "6 months",
+      title: "Malta Work Visa",
+      description: "BASNET LAXMAN Approved For Malta Work Visa",
+      country: "Malta",
+      duration: "4 Weeks",
       category: "Permanent",
     },
-    {
-      id: 4,
-      image: success4,
-      title: "Australia Work Visa",
-      description: "Family vacation approved for Australia",
-      country: "🇦🇺 Australia",
-      duration: "1 week",
-      category: "Tourist",
-    },
-    {
-      id: 5,
-      image: success5,
-      title: "Germany Work Visa",
-      description: "Skilled worker visa for Berlin",
-      country: "🇩🇪 Germany",
-      duration: "4 weeks",
-      category: "Work",
-    },
-    {
-      id: 6,
-      image: success6,
-      title: "Japan Work Visa",
-      description: "Skilled worker visa for Japan Tokyo",
-      country: "🇯🇵 Japan",
-      duration: "3 weeks",
-      category: "Student",
-    },
-    {
-      id: 7,
-      image: success7,
-      title: "France Work Visa",
-      description: "Business travel visa approved",
-      country: "🇫🇷 France",
-      duration: "2 weeks",
-      category: "Business",
-    },
-    {
-      id: 8,
-      image: success8,
-      title: "New Zealand Work",
-      description: "Working holiday visa success",
-      country: "🇳🇿 New Zealand",
-      duration: "3 weeks",
-      category: "Work",
-    },
+    // {
+    //   id: 4,
+    //   image: success4,
+    //   title: "Australia Work Visa",
+    //   description: "Family vacation approved for Australia",
+    //   country: "🇦🇺 Australia",
+    //   duration: "1 week",
+    //   category: "Tourist",
+    // },
+    // {
+    //   id: 5,
+    //   image: success5,
+    //   title: "Germany Work Visa",
+    //   description: "Skilled worker visa for Berlin",
+    //   country: "🇩🇪 Germany",
+    //   duration: "4 weeks",
+    //   category: "Work",
+    // },
+    // {
+    //   id: 6,
+    //   image: success6,
+    //   title: "Japan Work Visa",
+    //   description: "Skilled worker visa for Japan Tokyo",
+    //   country: "🇯🇵 Japan",
+    //   duration: "3 weeks",
+    //   category: "Student",
+    // },
+    // {
+    //   id: 7,
+    //   image: success7,
+    //   title: "France Work Visa",
+    //   description: "Business travel visa approved",
+    //   country: "🇫🇷 France",
+    //   duration: "2 weeks",
+    //   category: "Business",
+    // },
+    // {
+    //   id: 8,
+    //   image: success8,
+    //   title: "New Zealand Work",
+    //   description: "Working holiday visa success",
+    //   country: "🇳🇿 New Zealand",
+    //   duration: "3 weeks",
+    //   category: "Work",
+    // },
   ];
 
   const floatingAnimation = {
@@ -370,7 +369,7 @@ const SuccessGallery = () => {
         initial="hidden"
         animate="visible"
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {successStories.map((story, index) => (
             <motion.div
               key={story.id}
@@ -443,7 +442,7 @@ const SuccessGallery = () => {
                     {story.title}
                   </motion.h3>
                   <motion.p
-                    className="text-gray-200 text-sm mb-3"
+                    className="text-gray-200 text-sm mb-3 uppercase tracking-wide"
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ delay: index * 0.1 + 0.4 }}
@@ -642,7 +641,7 @@ const SuccessGallery = () => {
                         </motion.h2>
 
                         <motion.p
-                          className="text-xl lg:text-2xl text-gray-200 mb-6 leading-relaxed"
+                          className="text-xl lg:text-2xl text-gray-200 mb-6 leading-relaxed uppercase tracking-wide"
                           initial={{ x: -50, opacity: 0 }}
                           animate={{ x: 0, opacity: 1 }}
                           transition={{ delay: 0.6 }}
