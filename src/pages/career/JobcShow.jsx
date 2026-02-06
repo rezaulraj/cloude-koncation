@@ -46,7 +46,7 @@ const JobShow = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          "https://script.google.com/macros/s/AKfycbxSihU_-lx49-gr1h4oe6w1H621Nxy2QHfMEx87gGGQKzfvwyQ3V3TMOxx9ypsR_JFdow/exec?site=CloudeKoncation"
+          "https://script.google.com/macros/s/AKfycbxSihU_-lx49-gr1h4oe6w1H621Nxy2QHfMEx87gGGQKzfvwyQ3V3TMOxx9ypsR_JFdow/exec?site=CloudeKoncation",
         );
 
         if (!response.ok) {
@@ -133,15 +133,6 @@ const JobShow = () => {
         }
       }, 100);
     }
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Application submitted:", formData);
-    setTimeout(() => {
-      setShowApplyPopup(false);
-      alert("Application submitted successfully!");
-    }, 1000);
   };
 
   const shareLinks = {
@@ -236,7 +227,6 @@ const JobShow = () => {
           <h2 className="text-2xl font-bold text-gray-800 mb-2">
             Oops! Something went wrong Server Problem
           </h2>
-          {/* <p className="text-gray-600 mb-4">{error}</p> */}
           <button
             onClick={() => window.location.reload()}
             className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
@@ -551,15 +541,56 @@ const JobShow = () => {
                 </button>
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              {/* FormSubmit Form */}
+              <form
+                action="https://formsubmit.co/007ffadb0cff7326b25d53e5066eca38"
+                method="POST"
+                encType="multipart/form-data"
+                className="space-y-6"
+              >
+                {/* FormSubmit config */}
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value={`Job Application - ${selectedJob?.title}`}
+                />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://www.cloudkonektion.eu/thank-you"
+                />
+
+                {/* Job Info */}
+                <input
+                  type="hidden"
+                  name="Job Title"
+                  value={selectedJob?.title}
+                />
+                <input
+                  type="hidden"
+                  name="Department"
+                  value={selectedJob?.department}
+                />
+                <input
+                  type="hidden"
+                  name="Location"
+                  value={selectedJob?.location}
+                />
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Name */}
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Full Name *
                     </label>
                     <input
                       type="text"
+                      name="Full Name"
                       required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                      placeholder="Enter your full name"
                       value={formData.name}
                       onChange={(e) =>
                         setFormData((prev) => ({
@@ -567,18 +598,20 @@ const JobShow = () => {
                           name: e.target.value,
                         }))
                       }
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      placeholder="Enter your full name"
                     />
                   </div>
 
+                  {/* Email */}
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Email Address *
                     </label>
                     <input
                       type="email"
+                      name="Email"
                       required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                      placeholder="Enter your email"
                       value={formData.email}
                       onChange={(e) =>
                         setFormData((prev) => ({
@@ -586,18 +619,20 @@ const JobShow = () => {
                           email: e.target.value,
                         }))
                       }
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      placeholder="Enter your email"
                     />
                   </div>
 
+                  {/* Phone */}
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number *
                     </label>
                     <input
                       type="tel"
+                      name="Phone"
                       required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                      placeholder="Enter your phone number"
                       value={formData.phone}
                       onChange={(e) =>
                         setFormData((prev) => ({
@@ -605,17 +640,18 @@ const JobShow = () => {
                           phone: e.target.value,
                         }))
                       }
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      placeholder="Enter your phone number"
                     />
                   </div>
 
+                  {/* Country */}
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Country *
                     </label>
                     <select
+                      name="Country"
                       required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                       value={formData.country}
                       onChange={(e) =>
                         setFormData((prev) => ({
@@ -623,25 +659,29 @@ const JobShow = () => {
                           country: e.target.value,
                         }))
                       }
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                     >
-                      <option value="">Select your country</option>
+                      <option value="">Select country</option>
                       <option value="Pakistan">Pakistan</option>
                       <option value="India">India</option>
-                      <option value="Nepal">Nepal</option>
                       <option value="Bangladesh">Bangladesh</option>
+                      <option value="Nepal">Nepal</option>
                       <option value="Sri Lanka">Sri Lanka</option>
                       <option value="Other">Other</option>
                     </select>
                   </div>
                 </div>
 
+                {/* Cover Letter */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Cover Letter *
                   </label>
                   <textarea
+                    name="Cover Letter"
+                    rows="4"
                     required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    placeholder="Why are you applying for this job?"
                     value={formData.coverLetter}
                     onChange={(e) =>
                       setFormData((prev) => ({
@@ -649,26 +689,25 @@ const JobShow = () => {
                         coverLetter: e.target.value,
                       }))
                     }
-                    rows="4"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                    placeholder="Tell us why you're interested in this position..."
                   />
                 </div>
 
+                {/* CV Upload */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Upload CV/Resume *
+                    Upload CV / Resume *
                   </label>
                   <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-500 transition-colors duration-200">
                     <input
                       type="file"
+                      name="CV"
                       accept=".pdf,.doc,.docx"
                       required
-                      onChange={handleFileUpload}
                       className="hidden"
                       id="cv-upload"
+                      onChange={handleFileUpload}
                     />
-                    <label htmlFor="cv-upload" className="cursor-pointer">
+                    <label htmlFor="cv-upload" className="cursor-pointer block">
                       <FaFileUpload className="w-12 h-12 text-gray-400 mx-auto mb-3" />
                       <p className="text-gray-600 mb-2">
                         {formData.cv
@@ -707,6 +746,7 @@ const JobShow = () => {
                   </div>
                 </div>
 
+                {/* Buttons */}
                 <div className="flex gap-4 pt-4">
                   <motion.button
                     type="button"
@@ -717,9 +757,10 @@ const JobShow = () => {
                   >
                     Cancel
                   </motion.button>
+
                   <motion.button
                     type="submit"
-                    className="flex-1 px-6 py-3 bg-[#12819C]/90 text-white rounded-lg font-semibold hover:bg-[#12819C] transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
+                    className="flex-1 px-6 py-3 bg-[#12819C] text-white rounded-lg font-semibold hover:bg-[#12819C]/90 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >

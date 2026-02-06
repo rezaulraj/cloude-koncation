@@ -147,7 +147,7 @@ const Footer = () => {
     },
     {
       icon: FaLinkedinIn,
-      href: "https://www.linkedin.com/company/cloud-konektion/",
+      href: "https://www.linkedin.com/company/cloudkonektion/",
       color: "#0A66C2",
     },
     {
@@ -209,7 +209,7 @@ const Footer = () => {
           </motion.h3>
 
           <motion.p className="flex items-center gap-2" variants={itemVariants}>
-            <MdMail/>
+            <MdMail />
             <Link
               to="mailto:help@cloudkonektion.eu"
               className="hover:underline"
@@ -311,7 +311,7 @@ const Footer = () => {
           className="text-sm text-center"
           whileHover={{ scale: 1.05, color: "#ffffff" }}
         >
-          Copyright © 2025 Cloud Konektion
+          Copyright © {new Date().getFullYear()} Cloud Konektion
         </motion.p>
       </motion.div>
     </motion.footer>

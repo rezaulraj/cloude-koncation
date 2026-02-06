@@ -29,6 +29,13 @@ const ModeForm = ({ isOpen, setIsOpen }) => {
               method="POST"
               className="space-y-4"
             >
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://www.cloudkonektion.eu/thank-you"
+              />
               <input
                 type="text"
                 name="name"
@@ -36,6 +43,7 @@ const ModeForm = ({ isOpen, setIsOpen }) => {
                 required
                 className="w-full border border-primary px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary"
               />
+
               <input
                 type="text"
                 name="company"
@@ -79,11 +87,6 @@ const ModeForm = ({ isOpen, setIsOpen }) => {
                 type="hidden"
                 name="_subject"
                 value="Request from cloudkonektion.eu"
-              />
-              <input
-                type="hidden"
-                name="_next"
-                value="https://cloudkonektion.eu"
               />
 
               <button
