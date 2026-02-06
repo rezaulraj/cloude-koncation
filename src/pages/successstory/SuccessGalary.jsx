@@ -381,7 +381,7 @@ const SuccessGallery = () => {
               whileHover="hover"
               initial="initial"
             >
-              {/* Holographic Border Effect */}
+
               <motion.div
                 className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#46C0DC] via-purple-500 to-[#46C0DC] bg-[length:200%_200%] opacity-0 group-hover:opacity-100"
                 variants={hologramEffect}

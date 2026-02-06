@@ -42,7 +42,6 @@ const HeroVisaSuccess = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-
   const confettiParticles = Array.from({ length: 50 }, (_, i) => ({
     id: i,
     color: ["#46C0DC", "#FF6B6B", "#4ECDC4", "#FFD166", "#6A0572"][
@@ -58,7 +57,7 @@ const HeroVisaSuccess = () => {
   const celebrationEmojis = ["🎉", "🎊", "✨", "🌟", "🥳", "🎈", "🏆", "✅"];
 
   return (
-    <div className="py-28 bg-[#192C33] flex items-center overflow-hidden relative">
+    <div className=" pt-28 sm:pt-40 pb-12 bg-[#192C33] flex items-center overflow-hidden relative ">
       <AnimatePresence>
         {showCelebration && (
           <div className="absolute inset-0 pointer-events-none z-50">
@@ -119,8 +118,8 @@ const HeroVisaSuccess = () => {
         )}
       </AnimatePresence>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
           <motion.div
             className="space-y-8"
             initial={{ opacity: 0, x: -50 }}
@@ -129,7 +128,7 @@ const HeroVisaSuccess = () => {
           >
             <div>
               <motion.h2
-                className="text-5xl lg:text-7xl font-bold text-[#46C0DC] leading-tight"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#46C0DC] leading-tight"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.7 }}
@@ -137,7 +136,7 @@ const HeroVisaSuccess = () => {
                 {t("successstory.headingsuccess")}
               </motion.h2>
               <motion.p
-                className="text-xl text-white/90 mt-6 leading-relaxed"
+                className="text-lg text-white/90 mt-6 leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.7 }}
@@ -170,7 +169,7 @@ const HeroVisaSuccess = () => {
           </motion.div>
 
           <div className="relative">
-            <div className="relative h-[600px] rounded-2xl ">
+            <div className="relative h-[450px] rounded-2xl ">
               <motion.div
                 className="absolute inset-0"
                 initial={{ opacity: 0 }}
@@ -218,7 +217,7 @@ const HeroVisaSuccess = () => {
                     <motion.img
                       src={images[currentImageIndex].image}
                       alt="Visa Success Celebration"
-                      className="w-full h-auto md:h-[450px] object-cover"
+                      className="w-full h-full object-center"
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.5 }}
                     />
@@ -296,7 +295,7 @@ const HeroVisaSuccess = () => {
               </div>
 
               <motion.div
-                className="absolute top-12 left-4 text-4xl"
+                className="absolute top-0 left-4 text-4xl"
                 animate={{
                   scale: [1, 1.3, 1],
                   rotate: [0, 15, -15, 0],
