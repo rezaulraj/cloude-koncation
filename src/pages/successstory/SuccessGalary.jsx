@@ -395,7 +395,7 @@ const SuccessGallery = () => {
                 <motion.img
                   src={story.image}
                   alt={story.title}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-80 object-center"
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.7 }}
                 />
